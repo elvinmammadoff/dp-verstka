@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-ins {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.font-lora {
+  font-family: "Lora", sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#quantity-input::-webkit-outer-spin-button,
+#quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#quantity-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#quantity-input:focus-visible {
+  outline: none;
+}
+
+#decrement-button[disabled] {
+  cursor: not-allowed;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after,
+.swiper-button-right::after, 
+.swiper-button-left::after {
+  content: "";
+}
+
+#caret {
+  transition: transform 0.15s ease-in-out;
+}
+
+select {
+  background-image: url('img/sp-caret-down.svg');
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+}
