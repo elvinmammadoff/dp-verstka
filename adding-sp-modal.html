@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
+ 
+        <div class="shadow-lg rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden py-[20.5px] px-[75px]">
+            
+            <!-- Close icon -->
+            <button class="absolute top-[25px] right-[27px]">
+                <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
+            </button>
+
+            <!-- Modal header -->
+            <div class="text-center px-[150px]">
+                <h3 class="font-lora font-[700] text-[#323735] text-[36px] leading-[43px]">You are adding <span class="text-[#6A976E]">Amy’s Postpartum Doula Service</span></h3>
+                <p class="mt-[16px] font-[300] text-[#464A48] text-[16px] leading-[24px]">Just a heads-up, you are adding a service to the registry. We recommend to confirm the dates & details. You can of course clarify it later!</p>
+            </div>
+
+            <!-- Modal content -->
+            <div class="grid grid-cols-1 mt-[24px] gap-x-[24px] gap-y-[24px] sm:grid-cols-6 p-[12px] pb-0">
+
+                <!-- Check -->
+                <div class="flex items-center gap-[12px] sm:col-span-6">
+                    <input id="comments" name="comments" type="checkbox" class="h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
+                    <label for="comments" class="font-[500] text-[#323735] text-[14px] leading-[17px]">I want the Service Provider to contact me</label>
+                </div>
+
+                <!-- Name -->
+                <div class="sm:col-span-2">
+                    <label for="first-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Name *</label>
+                    <div class="mt-[10px]">
+                        <input type="text" name="first-name" id="first-name" placeholder="Automatically Filled"
+                            class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                    </div>
+                </div>
+        
+                <!-- Email -->
+                <div class="sm:col-span-2">
+                    <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">E-mail</label>
+                    <div class="mt-[10px]">
+                        <input id="email" name="email" type="email" placeholder="Automatically Filled" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                    </div>
+                </div>
+        
+                <!-- Phone -->
+                <div class="sm:col-span-2">
+                    <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Phone (optionally)</label>
+                    <div class="mt-[10px]">
+                        <input id="email" name="email" type="email" placeholder="Enter your phone here" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col mt-[24px]">
+
+                <div class="p-[12px]">
+                    <!-- Check -->
+                    <div class="flex items-center gap-[12px] sm:col-span-6 ">
+                        <input id="comments" name="comments" type="checkbox" class="h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
+                        <label for="comments" class="font-[500] text-[#323735] text-[14px] leading-[17px]">I will contact the Service Provider myself</label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-y-[8px] items-center bg-[#F9F3EF] rounded-[6px] p-[12px] mt-[12px]">
+                    <h3 class="font-[700] text-[16px] leading-[24px]">How do I contact Amy?</h3>
+                    <p class="font-[300] text-[14px] leading-[21px]">Please Reach out with a method most convenient for you.</p>
+                    <div class="flex items-center gap-[36px]">
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-email.svg" alt="email" class="w-[24px] h-[24px]" />
+                            <span class="text-[14px] leading-[17px] text-[#464A48]">doulaamy@email.com</span>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-phone.svg" alt="phone" class="w-[24px] h-[24px]" />
+                            <span class="text-[14px] leading-[17px] text-[#464A48]">(123)456-7890</span>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-web.svg" alt="website" class="w-[24px] h-[24px]" />
+                            <span class="text-[14px] leading-[17px] text-[#464A48]">wwww.amywebsite.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-[12px] mb-[17px]">
+                    <a href="" class="underline underline-offset-4 text-[#464A48] leading-[21px] text-sm font-[700]">Link to FAQs</a>
+                </div>
+
+            </div>
+
+            <!-- Modal action button -->
+            <button class="flex items-center justify-center mt-[24px] gap-x-[12px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[11px] px-[30px] rounded-lg max-w mx-auto">
+                <img src="img/sp-add-circle-white.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                <span class="leading-[25px] font-[600] text-[18px]">Add to registry</span>
+            </button>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
