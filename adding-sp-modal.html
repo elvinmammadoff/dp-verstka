@@ -11,7 +11,7 @@
   <body>
     <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
  
-        <div class="shadow-lg rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden py-[20.5px] px-[75px]">
+        <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden py-[20.5px] px-[75px]">
             
             <!-- Close icon -->
             <button class="absolute top-[25px] right-[27px]">
@@ -25,11 +25,11 @@
             </div>
 
             <!-- Modal content -->
-            <div class="grid grid-cols-1 mt-[24px] gap-x-[24px] gap-y-[24px] sm:grid-cols-6 p-[12px] pb-0">
+            <div class="grid grid-cols-1 mt-[24px] gap-[24px] sm:grid-cols-6 p-[12px] pb-0">
 
                 <!-- Check -->
                 <div class="flex items-center gap-[12px] sm:col-span-6">
-                    <input id="comments" name="comments" type="checkbox" class="h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
+                    <input id="comments" name="comments" type="checkbox" class="accent-[#6A976E] h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
                     <label for="comments" class="font-[500] text-[#323735] text-[14px] leading-[17px]">I want the Service Provider to contact me</label>
                 </div>
 
@@ -54,7 +54,7 @@
                 <div class="sm:col-span-2">
                     <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Phone (optionally)</label>
                     <div class="mt-[10px]">
-                        <input id="email" name="email" type="email" placeholder="Enter your phone here" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                        <input id="phone" name="phone" type="text" placeholder="Enter your phone here" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                 <div class="p-[12px]">
                     <!-- Check -->
                     <div class="flex items-center gap-[12px] sm:col-span-6 ">
-                        <input id="comments" name="comments" type="checkbox" class="h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
+                        <input id="comments" name="comments" type="checkbox" class="accent-[#6A976E] h-[26px] w-[26px] rounded-[3px] border-[#BEADA1] text-white focus:outline-none">
                         <label for="comments" class="font-[500] text-[#323735] text-[14px] leading-[17px]">I will contact the Service Provider myself</label>
                     </div>
                 </div>
