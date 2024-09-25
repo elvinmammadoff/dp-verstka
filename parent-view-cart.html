@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto pt-[35px] pb-[30px] max-w-[1100px]">
+
+        <!-- Breadcrumbs -->
+        <div class="flex items-center gap-[4px] mb-[17px] text-sm leading-[21px] text-[#BCC2C0]">
+            <a href="#">Back to Registry</a> /
+            <span class="text-[#323735]">Cart</span>
+        </div>
+
+        <div class="flex flex-col gap-y-[30px]">
+            
+            <!-- Subject -->
+            <div class="rounded-2xl bg-[#F9F3EF] p-[40px] flex flex-col items-center gap-[10px]">
+                <h3 class="font-lora text-[#323735] font-[700] text-6xl leading-[68px]">Your Cart</h3>
+                <div class="flex items-center gap-[6px]">
+                    <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                    <p class="text-[#464A48] text-base font-normal leading-[24px]">You have currently <span class="text-[#6A976E] text-base font-[600] leading-[24px]">$50</span> in your Dopple Credit Account</p>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-[26px]">
+                <div class="sm:col-span-8">
+    
+                    <!-- Cart checkout table  -->
+                    <div class="relative overflow-x-auto border rounded-[16px] pt-[24px] pb-[32px] px-[22px] h-full">
+                        <table class="w-full">
+                            <thead class="text-base text-[#323735] font-[500] leading-[22px]">
+                                <tr>
+                                    <th scope="col" class="text-left py-[10px] pl-[16px]">Products</th>
+                                    <th scope="col" class="text-right py-[10px] px-[20px]">Quantity</th>
+                                    <th scope="col" class="text-right py-[10px]">Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+    
+                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                            </div>
+                                            <div class="flex flex-col items-start gap-y-[2px]">
+                                                <span class="text-[12px] font-[500] leading-[18px] text-[##323735] bg-[#EBF4EB] rounded py-[6px] px-[12px] w-full">Alternative Choosen</span>
+                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Gift Name, Characteristic + Size</h3>
+                                            </div>
+                                        </div>
+    
+                                    </th>
+                                    <td class="pb-[23px] pl-[10px] pr-[10px]">
+    
+                                        <div class="flex w-full justify-end">
+    
+                                            <div class="flex flex-col gap-y-[4px] items-center">
+    
+                                                <!-- Quantity input -->
+                                                <div class="relative flex max-w mt-[20px]">
+                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                </div>
+
+                                                <span class="text-[10px] text-[#6B6C6B] leading-[22px]">unit</span>
+                                            
+                                            </div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="pb-[23px] pl-[20px]">
+    
+                                        <div class="flex items-center justify-end mt-[20px] gap-[30px]">
+    
+                                            <div class="flex flex-col items-end">
+                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$220.00</span>
+                                                <span class="font-[700] text-[11px] leading-[16px] text-[#6A976E] text-right mt-[2px] max-w-[120px] whitespace-pre-line">$200 funded through Group Gifting</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="flex flex-col items-center gap-y-[12px] mt-[24px]">
+                            <p class="text-[#464A48] font-[600] text-[14px] text-center leading-[21px] max-w-[280px] w-full mx-auto">Changed your mind? Choose a differently priced alternative:</p>
+
+                            <button type="button max-w max-auto"
+                                class="flex items-center justify-center gap-x-[10px] text-[#464A48] bg-white border-[1px] border-[#464A48] hover:bg-white focus:outline-none font-[700] leading-[17px] rounded-[5px] text-[14px] px-[12px] py-[6px] text-center">
+                                <img src="img/pwc-arrow-back.svg" alt="back" class="w-[24px] h-[24px]" />
+                                <span>Back to Alternatives</span>
+                            </button>
+                        </div>
+                    </div>               
+    
+                </div>
+                <div class="sm:col-span-4">
+    
+                    <!-- Order summary -->
+                    <div class="flex flex-col gap-y-[20px] bg-[#F9F3EF] rounded-[16px] px-[24px] pt-[24px] pb-[59px]">
+    
+                        <h3 class="text-2xl text-[#323735] font-[600] leading-[33px] mb-[4px]">Order Summary</h3>
+    
+                        <div class="flex flex-col gap-y-[20px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Subtotal</h4>
+                                <span class="text-base font-[300] text-[#323735]">$220.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Tax</h4>
+                                <span class="text-base font-[300] text-[#323735]">$0.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Shipping*</h4>
+                                <span class="text-base font-[500] text-[#323735] uppercase">Free</span>
+                            </div>
+                    
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+
+                            <!-- Funded -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base leading-[22px] font-[500] text-[#323735]">Funded by Friends & Family</h4>
+                                <span class="text-base leading-[22px] font-[500] text-[#6A976E]">-$200.00</span>
+                            </div>
+
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+                    
+                            <!-- Total -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-lg leading-[25px] font-[500] text-[#323735]">Total</h4>
+                                <span class="text-lg leading-[25px] font-[500] text-[#323735]">$20.00</span>
+                            </div>
+
+                            <!-- Apply credit button -->
+                            <button type="submit"
+                                class="flex items-center justify-center text-[#323735] border-[1px] border-[#323735] bg-transparent hover:bg-transparent focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[20px] py-[13px] text-center">
+                                Apply My Dopple Credit ($20)
+                            </button>
+                            
+                            <!-- Checkout button -->
+                            <button type="submit"
+                                class="flex items-center justify-center gap-x-[12px] text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[30px] py-[16px] text-center">
+                                <span>Pay the Difference</span>
+                                <img src="img/bt-start.svg" alt="start" class="w-[24px] h-[24px]" />
+                            </button>
+                    
+                        </div>
+                    
+                    </div>
+              
+    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mx-auto pt-[35px] pb-[30px] max-w-[1100px]">
+
+        <!-- Breadcrumbs -->
+        <div class="flex items-center gap-[4px] mb-[17px] text-sm leading-[21px] text-[#BCC2C0]">
+            <a href="#">Back to Registry</a> /
+            <span class="text-[#323735]">Cart</span>
+        </div>
+
+        <div class="flex flex-col gap-y-[30px]">
+            
+            <!-- Subject -->
+            <div class="rounded-2xl bg-[#F9F3EF] p-[40px] flex flex-col items-center gap-[10px]">
+                <h3 class="font-lora text-[#323735] font-[700] text-6xl leading-[68px]">Your Cart</h3>
+                <div class="flex items-center gap-[6px]">
+                    <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                    <p class="text-[#464A48] text-base font-normal leading-[24px]">You have currently <span class="text-[#6A976E] text-base font-[600] leading-[24px]">$30</span> in your Dopple Credit Account</p>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-[26px]">
+                <div class="sm:col-span-8">
+    
+                    <!-- Cart checkout table  -->
+                    <div class="relative overflow-x-auto border rounded-[16px] pt-[24px] pb-[32px] px-[22px] h-full">
+                        <table class="w-full">
+                            <thead class="text-base text-[#323735] font-[500] leading-[22px]">
+                                <tr>
+                                    <th scope="col" class="text-left py-[10px] pl-[16px]">Products</th>
+                                    <th scope="col" class="text-right py-[10px] px-[20px]">Quantity</th>
+                                    <th scope="col" class="text-right py-[10px]">Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+    
+                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                            </div>
+                                            <div class="flex flex-col items-start gap-y-[2px]">
+                                                <span class="text-[12px] font-[500] leading-[18px] text-[##323735] bg-[#EBF4EB] rounded py-[6px] px-[12px] w-full">Alternative Choosen</span>
+                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Gift Name, Characteristic + Size</h3>
+                                            </div>
+                                        </div>
+    
+                                    </th>
+                                    <td class="pb-[23px] pl-[10px] pr-[10px]">
+    
+                                        <div class="flex w-full justify-end">
+    
+                                            <div class="flex flex-col gap-y-[4px] items-center">
+    
+                                                <!-- Quantity input -->
+                                                <div class="relative flex max-w mt-[20px]">
+                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                </div>
+
+                                                <span class="text-[10px] text-[#6B6C6B] leading-[22px]">unit</span>
+                                            
+                                            </div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="pb-[23px] pl-[20px]">
+    
+                                        <div class="flex items-center justify-end mt-[20px] gap-[30px]">
+    
+                                            <div class="flex flex-col items-end">
+                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$220.00</span>
+                                                <span class="font-[700] text-[11px] leading-[16px] text-[#6A976E] text-right mt-[2px] max-w-[120px] whitespace-pre-line">$200 funded through Group Gifting</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="flex flex-col items-center gap-y-[12px] mt-[24px]">
+                            <p class="text-[#464A48] font-[600] text-[14px] text-center leading-[21px] max-w-[280px] w-full mx-auto">Changed your mind? Choose a differently priced alternative:</p>
+
+                            <button type="button max-w max-auto"
+                                class="flex items-center justify-center gap-x-[10px] text-[#464A48] bg-white border-[1px] border-[#464A48] hover:bg-white focus:outline-none font-[700] leading-[17px] rounded-[5px] text-[14px] px-[12px] py-[6px] text-center">
+                                <img src="img/pwc-arrow-back.svg" alt="back" class="w-[24px] h-[24px]" />
+                                <span>Back to Alternatives</span>
+                            </button>
+                        </div>
+                    </div>               
+    
+                </div>
+                <div class="sm:col-span-4">
+    
+                    <!-- Order summary -->
+                    <div class="flex flex-col gap-y-[20px] bg-[#F9F3EF] rounded-[16px] px-[24px] pt-[24px] pb-[59px]">
+    
+                        <h3 class="text-2xl text-[#323735] font-[600] leading-[33px] mb-[4px]">Order Summary</h3>
+    
+                        <div class="flex flex-col gap-y-[20px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Subtotal</h4>
+                                <span class="text-base font-[300] text-[#323735]">$220.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Tax</h4>
+                                <span class="text-base font-[300] text-[#323735]">$0.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Shipping*</h4>
+                                <span class="text-base font-[500] text-[#323735] uppercase">Free</span>
+                            </div>
+                    
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+
+                            <!-- Funded -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base leading-[22px] font-[500] text-[#323735]">Funded by Friends & Family</h4>
+                                <span class="text-base leading-[22px] font-[500] text-[#6A976E]">-$200.00</span>
+                            </div>
+
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+                    
+                            <!-- Total -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-lg leading-[25px] font-[500] text-[#323735]">Total</h4>
+                                <span class="text-lg leading-[25px] font-[500] text-[#323735]">$20.00</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-[10px]">
+                                
+                                <p class="text-base text-[#6A976E] font-[700] leading-[22px] text-center">20$ will be credited to your account </p>
+                                
+                                <!-- Checkout button -->
+                                <button type="submit"
+                                    class="flex items-center justify-center gap-x-[12px] text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[30px] py-[16px] text-center">
+                                    <span>Confirm Purchase</span>
+                                    <img src="img/bt-start.svg" alt="start" class="w-[24px] h-[24px]" />
+                                </button>
+
+                            </div>
+                    
+                        </div>
+                    
+                    </div>
+              
+    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mx-auto pt-[35px] pb-[30px] max-w-[1100px]">
+
+        <!-- Breadcrumbs -->
+        <div class="flex items-center gap-[4px] mb-[17px] text-sm leading-[21px] text-[#BCC2C0]">
+            <a href="#">Back to Registry</a> /
+            <span class="text-[#323735]">Cart</span>
+        </div>
+
+        <div class="flex flex-col gap-y-[30px]">
+            
+            <!-- Subject -->
+            <div class="rounded-2xl bg-[#F9F3EF] p-[40px] flex flex-col items-center gap-[10px]">
+                <h3 class="font-lora text-[#323735] font-[700] text-6xl leading-[68px]">Your Cart</h3>
+                <div class="flex items-center gap-[6px]">
+                    <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                    <p class="text-[#464A48] text-base font-normal leading-[24px]">You have currently <span class="text-[#6A976E] text-base font-[600] leading-[24px]">$30</span> in your Dopple Credit Account</p>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-[26px]">
+                <div class="sm:col-span-8">
+    
+                    <!-- Cart checkout table  -->
+                    <div class="relative overflow-x-auto border rounded-[16px] pt-[24px] pb-[32px] px-[22px] h-full">
+                        <table class="w-full">
+                            <thead class="text-base text-[#323735] font-[500] leading-[22px]">
+                                <tr>
+                                    <th scope="col" class="text-left py-[10px] pl-[16px]">Products</th>
+                                    <th scope="col" class="text-right py-[10px] px-[20px]">Quantity</th>
+                                    <th scope="col" class="text-right py-[10px]">Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+    
+                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                            </div>
+                                            <div class="flex flex-col items-start gap-y-[2px]">
+                                                <span class="text-[12px] font-[500] leading-[18px] text-[##323735] bg-[#EBF4EB] rounded py-[6px] px-[12px] w-full">Alternative Choosen</span>
+                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Gift Name, Characteristic + Size</h3>
+                                            </div>
+                                        </div>
+    
+                                    </th>
+                                    <td class="pb-[23px] pl-[10px] pr-[10px]">
+    
+                                        <div class="flex w-full justify-end">
+    
+                                            <div class="flex flex-col gap-y-[4px] items-center">
+    
+                                                <!-- Quantity input -->
+                                                <div class="relative flex max-w mt-[20px]">
+                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                </div>
+
+                                                <span class="text-[10px] text-[#6B6C6B] leading-[22px]">unit</span>
+                                            
+                                            </div>
+                                        </div>
+    
+                                    </td>
+                                    <td class="pb-[23px] pl-[20px]">
+    
+                                        <div class="flex items-center justify-end mt-[20px] gap-[30px]">
+    
+                                            <div class="flex flex-col items-end">
+                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$220.00</span>
+                                                <span class="font-[700] text-[11px] leading-[16px] text-[#6A976E] text-right mt-[2px] max-w-[120px] whitespace-pre-line">$200 funded through Group Gifting</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="flex flex-col items-center gap-y-[12px] mt-[24px]">
+                            <p class="text-[#464A48] font-[600] text-[14px] text-center leading-[21px] max-w-[280px] w-full mx-auto">Changed your mind? Choose a differently priced alternative:</p>
+
+                            <button type="button max-w max-auto"
+                                class="flex items-center justify-center gap-x-[10px] text-[#464A48] bg-white border-[1px] border-[#464A48] hover:bg-white focus:outline-none font-[700] leading-[17px] rounded-[5px] text-[14px] px-[12px] py-[6px] text-center">
+                                <img src="img/pwc-arrow-back.svg" alt="back" class="w-[24px] h-[24px]" />
+                                <span>Back to Alternatives</span>
+                            </button>
+                        </div>
+                    </div>               
+    
+                </div>
+                <div class="sm:col-span-4">
+    
+                    <!-- Order summary -->
+                    <div class="flex flex-col gap-y-[20px] bg-[#F9F3EF] rounded-[16px] px-[24px] pt-[24px] pb-[59px]">
+    
+                        <h3 class="text-2xl text-[#323735] font-[600] leading-[33px] mb-[4px]">Order Summary</h3>
+    
+                        <div class="flex flex-col gap-y-[20px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Subtotal</h4>
+                                <span class="text-base font-[300] text-[#323735]">$220.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Tax</h4>
+                                <span class="text-base font-[300] text-[#323735]">$0.00</span>
+                            </div>
+                    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Shipping*</h4>
+                                <span class="text-base font-[500] text-[#323735] uppercase">Free</span>
+                            </div>
+                    
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+
+                            <!-- Funded -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base leading-[22px] font-[500] text-[#323735]">Funded by Friends & Family</h4>
+                                <span class="text-base leading-[22px] font-[500] text-[#6A976E]">-$200.00</span>
+                            </div>
+
+                            <!-- Star credit -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-base leading-[22px] font-[500] text-[#323735]">Star Credit</h4>
+                                <span class="text-base leading-[22px] font-[500] text-[#6A976E]">-$20.00</span>
+                            </div>
+
+                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+                    
+                            <!-- Total -->
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <h4 class="text-lg leading-[25px] font-[500] text-[#323735]">Total</h4>
+                                <span class="text-lg leading-[25px] font-[500] text-[#323735]">$20.00</span>
+                            </div>
+
+                            <div class="flex flex-col gap-y-[10px]">
+
+                                <!-- Apply credit button -->
+                                <button type="submit"
+                                    class="flex items-center justify-center gap-x-[24px] bg-transparent hover:bg-transparent focus:outline-none w-full px-[20px] py-[13px] text-center">
+                                    <span class="font-[700] leading-[25px] text-[18px] text-[#6A976E]">$20 Star Credit Applied </span>
+                                    <img src="img/exit.svg" alt="close" class="w-[16px] h-[16px]" />
+                                </button>
+                                
+                                <!-- Checkout button -->
+                                <button type="submit"
+                                    class="flex items-center justify-center gap-x-[12px] text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[30px] py-[16px] text-center">
+                                    <span>Pay the Difference</span>
+                                    <img src="img/bt-start.svg" alt="start" class="w-[24px] h-[24px]" />
+                                </button>
+
+                            </div>
+                    
+                        </div>
+                    
+                    </div>
+              
+    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
