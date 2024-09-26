@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
+ 
+        <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden py-[109px] px-[60px]">
+            
+            <!-- Close icon -->
+            <button class="absolute top-[25px] right-[27px]">
+                <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
+            </button>
+
+            <!-- Modal header -->
+            <div class="text-center">
+                <h3 class="font-lora font-[700] text-[#323735] text-[36px] leading-[43px]"><span class="text-[#6A976E] italic">[Service Provider Name]</span> sent you a Service Agreement for [Service Type] Services!</h3>
+                <p class="mt-[16px] font-[300] text-[#464A48] text-[16px] leading-[24px] max-w-[600px] mx-auto">(This should be a confirmation of what you spoke about with them.) Everything look good? </p>
+            </div>
+
+            <!-- Modal content -->
+            <div class="grid grid-cols-1 mt-[24px] gap-x-[40px] gap-y-[24px] sm:grid-cols-6 max-w-[640px] mx-auto">
+        
+                <div class="sm:col-span-3">
+                    <h3 class="font-[700] text-[#323735] text-base leading-[22px]">Type of Service</h3>
+                    <p class="font-[400] text-[#464A48] text-sm leading-[21px] mt-[8px]">Doula Childbirth Services</p>
+                </div>
+
+                <div class="sm:col-span-3">
+                    <h3 class="font-[700] text-[#323735] text-base leading-[22px]">Date & Time</h3>
+                    <p class="font-[400] text-[#464A48] text-sm leading-[21px] mt-[8px]">08/28/2024 at 10:00am</p>
+                </div>
+
+                <div class="sm:col-span-3">
+                    <h3 class="font-[700] text-[#323735] text-base leading-[22px]">Location</h3>
+                    <p class="font-[400] text-[#464A48] text-sm leading-[21px] mt-[8px]">St. Wards Hospital</p>
+                </div>
+
+                <div class="sm:col-span-3">
+                    <h3 class="font-[700] text-[#323735] text-base leading-[22px]">Total Amount Owed</h3>
+                    <p class="font-[400] text-[#464A48] text-sm leading-[21px] mt-[8px]">$800</p>
+                </div>
+
+                <div class="sm:col-span-6">
+                    <h3 class="font-[700] text-[#323735] text-base leading-[22px]">Notes</h3>
+                    <p class="font-[400] text-[#464A48] text-sm leading-[21px] mt-[8px]">I will come to [address] at 09:30 to prepare. Please have your essentials and your hospital bag.</p>
+                </div>
+
+            </div>
+
+            <!-- Modal action buttons -->
+            <div class="flex items-center justify-center gap-x-[32px] mt-[36px]">
+                <button class="flex items-center justify-center bg-transparent text-[#323735] hover:bg-transparent hover:text-[#323735] border-[1px] border-[#323735] py-[10px] px-[30px] rounded-lg w-auto sm:w-[209px]">
+                    <span class="leading-[23px] font-[600] text-[18px]">No, Decline</span>
+                </button>
+
+                <button class="flex items-center justify-center gap-x-[12px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[10px] px-[30px] rounded-lg w-auto sm:w-[209px]">
+                    <img src="img/check-cw-24.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                    <span class="leading-[25px] font-[600] text-[18px]">Yes, Confirm</span>
+                </button>
+            </div>
+            
+            <div class="text-center">
+                <p class="leading-[21px] font-[300] text-[14px] text-[#6B6C6B] mt-[12px]">Questions/Change Requests? <a href="" class="font-[600] underline underline-offset-4">Contact Amy</a></p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
