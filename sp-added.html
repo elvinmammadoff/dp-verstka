@@ -14,368 +14,392 @@
         <div class="gap-x-[26px] gap-y-[24px] mt-[19px] flex flex-wrap">
 
             <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white h-auto">
-                
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
-                </div>
+            <div class="w-[255px] h-auto relative overflow-hidden">
 
-                <!-- Provider add card body -->
-                <div class="mt-[12px]">
+                <div class="py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
 
-                    <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
-                    
-                    <div class="flex items-center gap-[4px] mt-[10px]">
-                        <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
                     </div>
-
-                    <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
-
-                    <div class="flex items-center justify-between gap-[16px]">
-                        <div class="flex flex-col gap-y-[2px]">
-                            <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[12px]">
+    
+                        <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
+                        
+                        <div class="flex items-center gap-[4px] mt-[10px]">
+                            <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
                         </div>
-
-                        <!-- Quantity input -->
-                        <div class="relative flex items-center w-[100px]">
-                            <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                            </button>
-                            <div class="relative">
-                                <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
-                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
+    
+                        <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
+    
+                        <div class="flex items-center justify-between gap-[16px]">
+                            <div class="flex flex-col gap-y-[2px]">
+                                <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
                             </div>
-                            <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
-                        <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
-                        <div class="flex items-center gap-x-[2px]">
-                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
-                            <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
-                            <div class="flex items-center">
-                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
-                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
+    
+                            <!-- Quantity input -->
+                            <div class="relative flex items-center w-[100px]">
+                                <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                </button>
+                                <div class="relative">
+                                    <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
+                                    <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
+                                </div>
+                                <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                </button>
                             </div>
                         </div>
-                    </div>
-
-                    <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[16px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                        <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                        <span class="leading-[19px] font-[600] text-[14px]">Add to registry</span>
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6B6C6B] rounded-[9px] bg-white h-auto">
-                
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
-                </div>
-
-                <!-- Provider add card body -->
-                <div class="mt-[12px]">
-
-                    <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
-                    
-                    <div class="flex items-center gap-[4px] mt-[10px]">
-                        <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
-                    </div>
-
-                    <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
-
-                    <div class="flex items-center justify-between gap-[16px]">
-                        <div class="flex flex-col gap-y-[2px]">
-                            <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
-                        </div>
-
-                        <!-- Quantity input -->
-                        <div class="relative flex items-center w-[100px]">
-                            <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                            </button>
-                            <div class="relative">
-                                <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
-                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
-                            </div>
-                            <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
-                        <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
-                        <div class="flex items-center gap-x-[2px]">
-                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
-                            <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
-                            <div class="flex items-center">
-                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
-                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
+    
+                        <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
+                            <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
+                            <div class="flex items-center gap-x-[2px]">
+                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
+                                <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
+                                <div class="flex items-center">
+                                    <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
+                                    <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-[#323735] text-white hover:bg-[#323735] hover:text-white px-[44px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                        <img src="img/sp-add-circle-white.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                        <span class="leading-[21px] font-[600] text-sm">Add to registry</span>
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6B6C6B] rounded-[9px] bg-white h-auto">
-                
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
-                </div>
-
-                <!-- Provider add card body -->
-                <div class="mt-[12px]">
-
-                    <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
-                    
-                    <div class="flex items-center gap-[4px] mt-[10px]">
-                        <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
-                    </div>
-
-                    <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
-
-                    <div class="flex items-center justify-between gap-[16px]">
-                        <div class="flex flex-col gap-y-[2px]">
-                            <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
-                        </div>
-
-                        <!-- Quantity input -->
-                        <div class="relative flex items-center w-[100px]">
-                            <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                            </button>
-                            <div class="relative">
-                                <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
-                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
-                            </div>
-                            <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
-                        <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
-                        <div class="flex items-center gap-x-[2px]">
-                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
-                            <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
-                            <div class="flex items-center">
-                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
-                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white px-[44px] py-[10px] border border-[#6A976E] hover:border-[#6A976E] rounded-lg w-full">
-                        <img src="img/check-cw-24.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                        <span class="leading-[21px] font-[600] text-sm">Added</span>
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white h-auto relative overflow-hidden">
-
-                <!-- Provider add ranking -->
-                <div class="absolute top-[-2px] left-[-2px] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
-                </div>
-                
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                </div>
-
-                <!-- Provider add card body -->
-                <div class="mt-[12px]">
-
-                    <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
-                    
-                    <div class="flex items-center justify-between gap-[10px] mt-[12px]">
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                    </div>
-
-                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[12px] mb-[12px]"></div>
-
-                    <!-- Price progress -->
-                    <div class="flex flex-col gap-y-[6px] mb-[24px]">
-
-                        <div class="flex items-center justify-between gap-[10px]">
-                            <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
-                            <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$50/$800</span>
-                        </div>
-
-                        <div class="flex w-full">
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[20px]"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white h-auto relative overflow-hidden">
-
-                <!-- Provider add ranking -->
-                <div class="absolute top-[-2px] left-[-2px] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
-                </div>
-                
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                </div>
-
-                <!-- Provider add card body -->
-                <div class="mt-[10px]">
-
-                    <p class="text-[#6A976E] leading-[18px] text-[12px] font-[600]">🎉 Your friends already started gifting!</p>
-                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, family, & life!</p>
-                    
-                    <div class="flex items-center justify-between gap-[10px] mt-[10px]">
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                    </div>
-
-                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[10px] mb-[10px]"></div>
-
-                    <!-- Price progress -->
-                    <div class="flex flex-col gap-y-[6px] mb-[24px]">
-
-                        <div class="flex items-center justify-between gap-[10px]">
-                            <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
-                            <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$50/$800</span>
-                        </div>
-
-                        <div class="flex w-full">
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[20px]"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Provider add card -->
-            <div class="w-[255px] py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white h-auto relative overflow-hidden">
-
-                <!-- Popup overlay -->
-                <div class="h-full w-full opacity-20 bg-[#6A976E] absolute z-20 top-0 left-0"></div>
-
-                <!-- Popup card -->
-                <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
-                    <div class="bg-white rounded-[10px] p-[16px]">
-                        <p class="text-[#323735] text-[19px] leading-[23px] font-[600] text-center">🎉 Your Service is fully funded!</p>
-                        <button class="py-[11px] px-[14px] text-white rounded-md mt-[16px] bg-[#6A976E] flex items-center justify-center gap-[12px] w-full">
-                            <img src="img/sp-add-circle-white.svg" alt="add" class="w-[24px] h-[24px]" >    
-                            <span class="text-sm leading-[21px] font-[700]">Find Provider</span>
+    
+                        <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[16px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                            <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                            <span class="leading-[19px] font-[600] text-[14px]">Add to registry</span>
                         </button>
                     </div>
-                </div>
 
-                <!-- Provider add ranking -->
-                <div class="absolute top-[-2px] left-[-2px] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
                 
-                <!-- Provider add card top -->
-                <div class="rounded-[9px] overflow-hidden">
-                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                </div>
+            </div>
 
-                <!-- Provider add card body -->
-                <div class="mt-[10px]">
+            <!-- Provider add card -->
+            <div class="w-[255px] h-auto relative overflow-hidden">
 
-                    <p class="text-[#6A976E] leading-[18px] text-[12px] font-[600]">🎉 Your friends already started gifting!</p>
-                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postnatal Services</h3>
-                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, family, & life!</p>
-                    
-                    <div class="flex items-center justify-between gap-[10px] mt-[10px]">
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6B6C6B] rounded-[9px] bg-white relative overflow-hidden">
+
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
+                    </div>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[12px]">
+    
+                        <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
+                        
+                        <div class="flex items-center gap-[4px] mt-[10px]">
+                            <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
+                        </div>
+    
+                        <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
+    
+                        <div class="flex items-center justify-between gap-[16px]">
+                            <div class="flex flex-col gap-y-[2px]">
+                                <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
+                            </div>
+    
+                            <!-- Quantity input -->
+                            <div class="relative flex items-center w-[100px]">
+                                <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                </button>
+                                <div class="relative">
+                                    <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
+                                    <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
+                                </div>
+                                <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
+                            <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
+                            <div class="flex items-center gap-x-[2px]">
+                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
+                                <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
+                                <div class="flex items-center">
+                                    <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
+                                    <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-[#323735] text-white hover:bg-[#323735] hover:text-white px-[44px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                            <img src="img/sp-add-circle-white.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                            <span class="leading-[21px] font-[600] text-sm">Add to registry</span>
+                        </button>
                     </div>
 
-                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[10px] mb-[10px]"></div>
+                </div>
 
-                    <!-- Price progress -->
-                    <div class="flex flex-col gap-y-[6px] mb-[24px]">
+            </div>
 
-                        <div class="flex items-center justify-between gap-[10px]">
-                            <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
-                            <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$800/$800</span>
+            <!-- Provider add card -->
+            <div class="w-[255px] h-auto relative overflow-hidden">
+
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6B6C6B] rounded-[9px] bg-white relative overflow-hidden">
+
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[164px]" />
+                    </div>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[12px]">
+    
+                        <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
+                        
+                        <div class="flex items-center gap-[4px] mt-[10px]">
+                            <span class="font-[500] leading-[21px] text-[#6B6C6B] text-[12px]">We recommend the $800 Service Fund</span>
                         </div>
-
-                        <div class="flex w-full">
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                            <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[20px]"></div>
+    
+                        <div class="w-full h-[1px] my-[12px] bg-[#F1F1F1]"></div>
+    
+                        <div class="flex items-center justify-between gap-[16px]">
+                            <div class="flex flex-col gap-y-[2px]">
+                                <h4 class="leading-[15px] font-[600] text-[#464A48] text-[12px]">Amount <br> Requested</h4>
+                            </div>
+    
+                            <!-- Quantity input -->
+                            <div class="relative flex items-center w-[100px]">
+                                <button type="button" id="decrement-button" data-action="minus" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                </button>
+                                <div class="relative">
+                                    <span class="font-[600] leading-[18px] text-[13px] absolute top-[50%] -translate-y-[50%] left-[7px]">$</span>
+                                    <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[18px] text-[13px] focus:border-[#BCC2C0] w-[54px] py-[7px] pl-[19px] pr-[7px]" />
+                                </div>
+                                <button type="button" id="increment-button" data-action="add" class="w-[24px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                    <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                </button>
+                            </div>
                         </div>
+    
+                        <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[10px]">
+                            <span class="leading-[15px] font-[600] text-[#464A48] text-[12px]">What Friends Pay:</span>
+                            <div class="flex items-center gap-x-[2px]">
+                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">16</span>
+                                <img src="img//sp-present.svg" alt="present" class="w-[20px] h-[20px] mt-[-4px]" />
+                                <div class="flex items-center">
+                                    <span class="leading-[18px] font-[600] text-[#6A976E] text-[12px]">at $50</span>
+                                    <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[10px]">/each</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button class="flex items-center justify-center mt-[13px] gap-x-[12px] mb-[5px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white px-[44px] py-[10px] border border-[#6A976E] hover:border-[#6A976E] rounded-lg w-full">
+                            <img src="img/check-cw-24.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                            <span class="leading-[21px] font-[600] text-sm">Added</span>
+                        </button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Provider add card -->
+            <div class="w-[255px] h-auto relative overflow-hidden">
+
+                <!-- Provider add ranking -->
+                <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
+                </div>
+
+                <div class="py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                    </div>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[12px]">
+    
+                        <h3 class="text-[#323735] leading-[22px] text-base font-[600] mt-[12px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, your family, and your life!</p>
+                        
+                        <div class="flex items-center justify-between gap-[10px] mt-[12px]">
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                        </div>
+    
+                        <div class="w-full h-[1px] bg-[#F1F1F1] mt-[12px] mb-[12px]"></div>
+    
+                        <!-- Price progress -->
+                        <div class="flex flex-col gap-y-[6px] mb-[24px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
+                                <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$50/$800</span>
+                            </div>
+    
+                            <div class="flex w-full">
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[20px]"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Provider add card -->
+            <div class="w-[255px] h-auto relative overflow-hidden">
+
+                <!-- Provider add ranking -->
+                <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
+                </div>
+
+                <div class="py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                    </div>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[10px]">
+    
+                        <p class="text-[#6A976E] leading-[18px] text-[12px] font-[600]">🎉 Your friends already started gifting!</p>
+                        <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, family, & life!</p>
+                        
+                        <div class="flex items-center justify-between gap-[10px] mt-[10px]">
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                        </div>
+    
+                        <div class="w-full h-[1px] bg-[#F1F1F1] mt-[10px] mb-[10px]"></div>
+    
+                        <!-- Price progress -->
+                        <div class="flex flex-col gap-y-[6px] mb-[24px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
+                                <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$50/$800</span>
+                            </div>
+    
+                            <div class="flex w-full">
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[20px]"></div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Provider add card -->
+            <div class="w-[255px] h-auto relative overflow-hidden">
+
+                <!-- Provider add ranking -->
+                <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                    <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
+                </div>
+
+                <div class="py-[10px] px-[10px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                    <!-- Popup overlay -->
+                    <div class="h-full w-full opacity-20 bg-[#6A976E] absolute z-20 top-0 left-0"></div>
+    
+                    <!-- Popup card -->
+                    <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
+                        <div class="bg-white rounded-[10px] p-[16px]">
+                            <p class="text-[#323735] text-[19px] leading-[23px] font-[600] text-center">🎉 Your Service is fully funded!</p>
+                            <button class="py-[11px] px-[14px] text-white rounded-md mt-[16px] bg-[#6A976E] flex items-center justify-center gap-[12px] w-full">
+                                <img src="img/sp-add-circle-white.svg" alt="add" class="w-[24px] h-[24px]" >    
+                                <span class="text-sm leading-[21px] font-[700]">Find Provider</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Provider add card top -->
+                    <div class="rounded-[9px] overflow-hidden">
+                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                    </div>
+    
+                    <!-- Provider add card body -->
+                    <div class="mt-[10px]">
+    
+                        <p class="text-[#6A976E] leading-[18px] text-[12px] font-[600]">🎉 Your friends already started gifting!</p>
+                        <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postnatal Services</h3>
+                        <p class="text-[#6B6C6B] leading-[18px] text-[12px] mt-[10px]">Doulas can provide so much more than you’d think for your body, family, & life!</p>
+                        
+                        <div class="flex items-center justify-between gap-[10px] mt-[10px]">
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                            <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                        </div>
+    
+                        <div class="w-full h-[1px] bg-[#F1F1F1] mt-[10px] mb-[10px]"></div>
+    
+                        <!-- Price progress -->
+                        <div class="flex flex-col gap-y-[6px] mb-[24px]">
+    
+                            <div class="flex items-center justify-between gap-[10px]">
+                                <span class="text-[#6B6C6B] leading-[22px] text-[14px] font-[500]">Group Gifting</span>
+                                <span class="text-[#6A976E] leading-[22px] text-[14px] font-[600]">$800/$800</span>
+                            </div>
+    
+                            <div class="flex w-full">
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[20px]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                <div class="w-[calc(100%/16)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[20px]"></div>
+                            </div>
+                        </div>
+    
                     </div>
 
                 </div>
@@ -387,14 +411,14 @@
         <div class="gap-x-[26px] gap-y-[24px] mt-[19px] flex flex-wrap">
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
 
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white h-auto relative overflow-hidden">
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white relative overflow-hidden">
                     
                     <!-- Provider add card top -->
                     <div class="rounded-[9px] overflow-hidden">
@@ -460,14 +484,14 @@
             </div>
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
 
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white h-auto relative overflow-hidden">
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white relative overflow-hidden">
                     
                     <!-- Provider add card top -->
                     <div class="rounded-[9px] overflow-hidden">
@@ -533,13 +557,14 @@
             </div>
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white h-auto relative overflow-hidden">
+
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white relative overflow-hidden">
                     
                     <!-- Provider add card top -->
                     <div class="rounded-[9px] overflow-hidden">
@@ -605,14 +630,14 @@
             </div>
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
 
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#F23030] rounded-[9px] bg-white h-auto relative overflow-hidden">
+                <div class="py-[10px] px-[10px] border-[2px] border-[#F23030] rounded-[9px] bg-white relative overflow-hidden">
                     
                     <!-- Provider add card top -->
                     <div class="rounded-[9px] overflow-hidden">
@@ -679,14 +704,14 @@
             </div>
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
 
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white h-auto relative overflow-hidden">
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white relative overflow-hidden">
                                 
                     <!-- Provider card top -->
                     <div class="bg-[#F9F3EF] w-full rounded-2xl py-[7px] px-[17px] flex flex-col items-center relative">
@@ -760,14 +785,14 @@
             </div>
 
             <!-- Provider add card -->
-            <div class="relative">
+            <div class="w-[255px] h-auto relative overflow-hidden">
     
                 <!-- Provider add ranking -->
                 <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
                     <span class="text-[21px] mb-[-4px] mr-[1px] font-normal">#</span>1
                 </div>
 
-                <div class="w-[255px] py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white overflow-hidden">
+                <div class="py-[10px] px-[10px] border-[2px] border-[#6A976E] rounded-[9px] bg-white relative overflow-hidden">
     
                     <!-- Popup overlay -->
                     <div class="h-full w-full opacity-20 bg-[#6A976E] absolute z-20 top-0 left-0"></div>
