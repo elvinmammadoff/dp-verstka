@@ -9,253 +9,255 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto pt-[95px] pb-[130px] max-w-[1100px]">
+    <div class="px-[16px]">
+        <div class="mx-auto pt-[95px] pb-[130px] max-w-[1100px]">
 
-        <!-- Breadcrumbs -->
-        <div class="flex items-center gap-[4px] mb-[17px] text-sm leading-[21px] text-[#BCC2C0]">
-            <a href="#">Back to Registry</a> /
-            <span class="text-[#323735]">Cart</span>
-        </div>
-
-        <div class="flex flex-col gap-y-[30px]">
-            
-            <!-- Subject -->
-            <div class="rounded-2xl bg-[#F9F3EF] p-[40px] flex flex-col items-center gap-[12px]">
-                <h3 class="font-lora text-[#323735] font-[700] text-6xl leading-[68px]">Your Cart</h3>
-                <p class="text-[#464A48] text-[18px] font-[400] leading-[25px]">You added gifts from <span class="font-lora text-[#6A976E] text-xl font-[600] leading-[33px]">Eve’s Registry</span></p>
+            <!-- Breadcrumbs -->
+            <div class="flex items-center gap-[4px] mb-[17px] text-sm leading-[21px] text-[#BCC2C0]">
+                <a href="#">Back to Registry</a> /
+                <span class="text-[#323735]">Cart</span>
             </div>
-    
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-[26px]">
-                <div class="sm:col-span-8">
-    
-                    <!-- Cart checkout table  -->
-                    <div class="relative overflow-x-auto border rounded-[16px] pt-[24px] pb-[32px] px-[22px] h-full">
-                        <table class="w-full">
-                            <thead class="text-base text-[#323735] font-[500] leading-[22px]">
-                                <tr>
-                                    <th scope="col" class="text-left py-[10px] pl-[16px]">Products</th>
-                                    <th scope="col" class="text-right py-[10px] px-[20px]">Quantity</th>
-                                    <th scope="col" class="text-right py-[10px]">Total Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="bg-white border-b">
-                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
-    
-                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
-                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
-                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
-                                            </div>
-                                            <div class="flex flex-col items-start gap-y-[2px]">
-                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Gift Name, Characteristic + Size</h3>
-                                                <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Details for services</span>
-                                            </div>
-                                        </div>
-    
-                                    </th>
-                                    <td class="pb-[23px] pl-[20px] pr-[44px]">
-    
-                                        <div class="flex w-full justify-end">
-    
-                                            <!-- Quantity input -->
-                                            <div class="relative flex max-w mt-[20px]">
-                                                <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                    <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                                                </button>
-                                                <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
-                                                <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                    <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                                                </button>
-                                            </div>
-                                        </div>
-    
-                                    </td>
-                                    <td class="pb-[23px] pl-[20px]">
-    
-                                        <div class="flex items-center justify-between mt-[20px] gap-[30px]">
-    
-                                            <div class="flex flex-col items-end">
-                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$80.00</span>
-                                                <span class="font-[400] text-[10px] leading-[20px] text-[#323735]">$40.00 each</span>
-                                            </div>
-    
-                                            <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
-                                                <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white border-b">
-                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
-    
-                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
-                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
-                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
-                                            </div>
-                                            <div class="flex flex-col items-start gap-y-[2px]">
-                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Healthy Meal Delivery Subscription</h3>
-                                                <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Gifting 1 week</span>
-                                            </div>
-                                        </div>
-    
-                                    </th>
-                                    <td class="pb-[23px] pl-[20px] pr-[44px]">
-    
-                                        <div class="flex w-full justify-end">
-    
-                                            <div class="flex flex-col gap-y-[4px] items-center">
 
-                                                <!-- Quantity input -->
-                                                <div class="relative flex max-w mt-[20px]">
-                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                                                    </button>
-                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
-                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                                                    </button>
-                                                </div>
-
-                                                <span class="text-[10px] text-[#6B6C6B] leading-[22px]">Gifting 1 week</span>
-
-                                            </div>
-                                        </div>
-    
-                                    </td>
-                                    <td class="pb-[23px] pl-[20px]">
-    
-                                        <div class="flex items-center justify-between mt-[20px] gap-[30px]">
-    
-                                            <div class="flex flex-col items-end">
-                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$40.00</span>
-                                            </div>
-    
-                                            <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
-                                                <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white">
-                                    <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
-    
-                                        <div class="flex items-center gap-x-[19px] mt-[20px]">
-                                            <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
-                                                <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
-                                            </div>
-                                            <div class="flex flex-col items-start gap-y-[2px]">
-                                                <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                                <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Healthy Meal Delivery Subscription</h3>
-                                                <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Gifting 1 week</span>
-                                            </div>
-                                        </div>
-    
-                                    </th>
-                                    <td class="pb-[23px] pl-[20px] pr-[44px]">
-    
-                                        <div class="flex w-full justify-end">
-    
-                                            <div class="flex flex-col gap-y-[4px] items-center">
-
-                                                <!-- Quantity input -->
-                                                <div class="relative flex max-w mt-[20px]">
-                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
-                                                    </button>
-                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
-                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
-                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
-                                                    </button>
-                                                </div>
-
-                                                <span class="text-[10px] text-[#6B6C6B] leading-[22px]">Gifting 1 week</span>
-
-                                            </div>
-
-                                        </div>
-    
-                                    </td>
-                                    <td class="pb-[23px] pl-[20px]">
-    
-                                        <div class="flex items-center justify-between mt-[20px] gap-[30px]">
-    
-                                            <div class="flex flex-col items-end">
-                                                <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$20.00</span>
-                                            </div>
-    
-                                            <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
-                                                <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>               
-    
+            <div class="flex flex-col gap-y-[30px]">
+                
+                <!-- Subject -->
+                <div class="rounded-2xl bg-[#F9F3EF] p-[40px] flex flex-col items-center gap-[12px]">
+                    <h3 class="font-lora text-[#323735] font-[700] text-6xl leading-[68px]">Your Cart</h3>
+                    <p class="text-[#464A48] text-[18px] font-[400] leading-[25px]">You added gifts from <span class="font-lora text-[#6A976E] text-xl font-[600] leading-[33px]">Eve’s Registry</span></p>
                 </div>
-                <div class="sm:col-span-4">
-    
-                    <!-- Order summary -->
-                    <div class="flex flex-col gap-y-[20px] bg-[#F9F3EF] rounded-[16px] px-[24px] pt-[24px] pb-[36px]">
-    
-                        <h3 class="text-2xl text-[#323735] font-[600] leading-[33px] mb-[4px]">Order Summary</h3>
-    
-                        <div class="flex flex-col gap-y-[20px]">
-    
-                            <div class="flex items-center justify-between gap-[10px]">
-                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Subtotal</h4>
-                                <span class="text-base font-[300] text-[#323735]">$140.00</span>
-                            </div>
-                    
-                            <div class="flex items-center justify-between gap-[10px]">
-                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Tax</h4>
-                                <span class="text-base font-[300] text-[#323735]">$0.00</span>
-                            </div>
-                    
-                            <div class="flex items-center justify-between gap-[10px]">
-                                <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Shipping*</h4>
-                                <span class="text-base font-[500] text-[#323735] uppercase">Free</span>
-                            </div>
-                    
-                            <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
-                    
-                            <!-- Total -->
-                            <div class="flex items-center justify-between gap-[10px]">
-                                <h4 class="text-lg leading-[25px] font-[500] text-[#323735]">Total</h4>
-                                <span class="text-lg leading-[25px] font-[500] text-[#323735]">$140.00</span>
-                            </div>
-                            
-                            <!-- Checkout button -->
-                            <button type="submit"
-                                class="flex items-center justify-center gap-x-[12px] text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[30px] py-[16px] text-center">
-                                <span>Checkout</span>
-                                <img src="img/bt-start.svg" alt="start" class="w-[24px] h-[24px]" />
-                            </button>
-    
-                            <!-- Shipping note -->
-                            <div class="bg-white flex flex-col gap-y-[8px] rounded-[6px] p-[12px]">
-                                <div class="flex items-start gap-[12px]">
-                                    <img src="img/gwc-shipping.svg" alt="" class="w-[24px] h-[24px]" />
-                                    <h4 class="text-base font-[600] leading-[22px] text-[#323735]">We’re missing the recipient’s address
-                                        😱</h4>
-                                </div>
-                                <p class="text-sm font-[300] text-[#323735] leading-[21px]">Please reach out to them directly to
-                                    confirm the address or ship to any address of your choice (like your own).</p>
-                            </div>
-                    
-                        </div>
-                    
+        
+                <div class="grid grid-cols-1 sm:grid-cols-12 gap-[26px]">
+                    <div class="sm:col-span-8">
+        
+                        <!-- Cart checkout table  -->
+                        <div class="relative overflow-x-auto border rounded-[16px] pt-[24px] pb-[32px] px-[22px] h-full">
+                            <table class="w-full">
+                                <thead class="text-base text-[#323735] font-[500] leading-[22px]">
+                                    <tr>
+                                        <th scope="col" class="text-left py-[10px] pl-[16px]">Products</th>
+                                        <th scope="col" class="text-right py-[10px] px-[20px]">Quantity</th>
+                                        <th scope="col" class="text-right py-[10px]">Total Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b">
+                                        <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+        
+                                            <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                                <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                    <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                                </div>
+                                                <div class="flex flex-col items-start gap-y-[2px]">
+                                                    <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                    <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Gift Name, Characteristic + Size</h3>
+                                                    <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Details for services</span>
+                                                </div>
+                                            </div>
+        
+                                        </th>
+                                        <td class="pb-[23px] pl-[20px] pr-[44px]">
+        
+                                            <div class="flex w-full justify-end">
+        
+                                                <!-- Quantity input -->
+                                                <div class="relative flex max-w mt-[20px]">
+                                                    <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                    <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                    <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                        <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                    </button>
+                                                </div>
+                                            </div>
+        
+                                        </td>
+                                        <td class="pb-[23px] pl-[20px]">
+        
+                                            <div class="flex items-center justify-between mt-[20px] gap-[30px]">
+        
+                                                <div class="flex flex-col items-end">
+                                                    <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$80.00</span>
+                                                    <span class="font-[400] text-[10px] leading-[20px] text-[#323735]">$40.00 each</span>
+                                                </div>
+        
+                                                <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
+                                                    <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white border-b">
+                                        <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+        
+                                            <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                                <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                    <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                                </div>
+                                                <div class="flex flex-col items-start gap-y-[2px]">
+                                                    <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                    <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Healthy Meal Delivery Subscription</h3>
+                                                    <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Gifting 1 week</span>
+                                                </div>
+                                            </div>
+        
+                                        </th>
+                                        <td class="pb-[23px] pl-[20px] pr-[44px]">
+        
+                                            <div class="flex w-full justify-end">
+        
+                                                <div class="flex flex-col gap-y-[4px] items-center">
+
+                                                    <!-- Quantity input -->
+                                                    <div class="relative flex max-w mt-[20px]">
+                                                        <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                            <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                        </button>
+                                                        <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                        <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                            <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                        </button>
+                                                    </div>
+
+                                                    <span class="text-[10px] text-[#6B6C6B] leading-[22px]">Gifting 1 week</span>
+
+                                                </div>
+                                            </div>
+        
+                                        </td>
+                                        <td class="pb-[23px] pl-[20px]">
+        
+                                            <div class="flex items-center justify-between mt-[20px] gap-[30px]">
+        
+                                                <div class="flex flex-col items-end">
+                                                    <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$40.00</span>
+                                                </div>
+        
+                                                <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
+                                                    <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <th scope="row" class="font-medium text-gray-900 whitespace-nowrap pb-[23px]">
+        
+                                            <div class="flex items-center gap-x-[19px] mt-[20px]">
+                                                <div class="bg-[#F1F1F1] w-[100px] h-[100px] rounded-[6px]">
+                                                    <img src="img/gift-placeholder.png" alt="gift" class="w-full h-full" />
+                                                </div>
+                                                <div class="flex flex-col items-start gap-y-[2px]">
+                                                    <span class="text-[10px] font-[300] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                                    <h3 class="text-[#323735] leading-[22px] text-[14px] font-[600] max-w-[190px] whitespace-pre-line text-left">Healthy Meal Delivery Subscription</h3>
+                                                    <span class="text-[#6B6C6B] font-[300] text-[10px] leading-[22px]">Gifting 1 week</span>
+                                                </div>
+                                            </div>
+        
+                                        </th>
+                                        <td class="pb-[23px] pl-[20px] pr-[44px]">
+        
+                                            <div class="flex w-full justify-end">
+        
+                                                <div class="flex flex-col gap-y-[4px] items-center">
+
+                                                    <!-- Quantity input -->
+                                                    <div class="relative flex max-w mt-[20px]">
+                                                        <button type="button" id="decrement-button" data-action="minus" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                            <img src="img/sp-minus.svg" alt="minus" class="w-[17px] h-[17px]" />
+                                                        </button>
+                                                        <input type="number" name="product-qty" id="quantity-input" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[33px] py-[5px] px-[7px]" />
+                                                        <button type="button" id="increment-button" data-action="add" class="w-[30px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[2px] px-[7px] focus:ring-gray-100 focus:outline-none">
+                                                            <img src="img/sp-plus.svg" alt="plus" class="w-[17px] h-[17px]" />
+                                                        </button>
+                                                    </div>
+
+                                                    <span class="text-[10px] text-[#6B6C6B] leading-[22px]">Gifting 1 week</span>
+
+                                                </div>
+
+                                            </div>
+        
+                                        </td>
+                                        <td class="pb-[23px] pl-[20px]">
+        
+                                            <div class="flex items-center justify-between mt-[20px] gap-[30px]">
+        
+                                                <div class="flex flex-col items-end">
+                                                    <span class="font-[600] text-[14px] leading-[21px] text-[#323735]">$20.00</span>
+                                                </div>
+        
+                                                <button class="flex items-center justify-center w-[24px] h-[24px] border-[1px] rounded-full border-cyan-500">
+                                                    <img src="img/trash-button.svg" alt="trash" class="w-[15px] h-[15px]" />
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>               
+        
                     </div>
-              
-    
+                    <div class="sm:col-span-4">
+        
+                        <!-- Order summary -->
+                        <div class="flex flex-col gap-y-[20px] bg-[#F9F3EF] rounded-[16px] px-[24px] pt-[24px] pb-[36px]">
+        
+                            <h3 class="text-2xl text-[#323735] font-[600] leading-[33px] mb-[4px]">Order Summary</h3>
+        
+                            <div class="flex flex-col gap-y-[20px]">
+        
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <h4 class="text-base font-normal text-[#323735] leading-[22px]">Subtotal</h4>
+                                    <span class="text-base font-[300] text-[#323735]">$140.00</span>
+                                </div>
+                        
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Tax</h4>
+                                    <span class="text-base font-[300] text-[#323735]">$0.00</span>
+                                </div>
+                        
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <h4 class="text-base font-normal text-[#323735] leading-[22px]">Estimated Shipping*</h4>
+                                    <span class="text-base font-[500] text-[#323735] uppercase">Free</span>
+                                </div>
+                        
+                                <div class="h-[1px] w-full bg-[#E9E9E9]"></div>
+                        
+                                <!-- Total -->
+                                <div class="flex items-center justify-between gap-[10px]">
+                                    <h4 class="text-lg leading-[25px] font-[500] text-[#323735]">Total</h4>
+                                    <span class="text-lg leading-[25px] font-[500] text-[#323735]">$140.00</span>
+                                </div>
+                                
+                                <!-- Checkout button -->
+                                <button type="submit"
+                                    class="flex items-center justify-center gap-x-[12px] text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-lg text-[18px] w-full px-[30px] py-[16px] text-center">
+                                    <span>Checkout</span>
+                                    <img src="img/bt-start.svg" alt="start" class="w-[24px] h-[24px]" />
+                                </button>
+        
+                                <!-- Shipping note -->
+                                <div class="bg-white flex flex-col gap-y-[8px] rounded-[6px] p-[12px]">
+                                    <div class="flex items-start gap-[12px]">
+                                        <img src="img/gwc-shipping.svg" alt="" class="w-[24px] h-[24px]" />
+                                        <h4 class="text-base font-[600] leading-[22px] text-[#323735]">We’re missing the recipient’s address
+                                            😱</h4>
+                                    </div>
+                                    <p class="text-sm font-[300] text-[#323735] leading-[21px]">Please reach out to them directly to
+                                        confirm the address or ship to any address of your choice (like your own).</p>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+                
+        
+                    </div>
                 </div>
+
             </div>
 
         </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

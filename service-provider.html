@@ -9,805 +9,807 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
 
-        <!-- User Info -->
-        <div class="bg-[#F9F3EF] w-full rounded-2xl py-[28px] px-[32px]">
-            <div class="flex items-center justify-between gap-[32px] flex-wrap">
+            <!-- User Info -->
+            <div class="bg-[#F9F3EF] w-full rounded-2xl py-[28px] px-[32px]">
+                <div class="flex items-center justify-between gap-[32px] flex-wrap">
 
-                <!-- User Profile [left] -->
-                <div class="flex items-center gap-[32px] flex-wrap">
-                    <!-- User Avatar -->
-                    <div class="w-[130px] h-[130px] border-8 border-[#BEADA1] rounded-full overflow-hidden">
-                        <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
-                    </div>
-    
-                    <!-- User Details -->
-                    <div class="flex flex-col gap-y-[8px]">
-                        <div class="flex items-center gap-[16px]">
-    
-                            <!-- Location -->
-                            <div class="flex items-center gap-[4px]">
-                                <img src="img/sp-location.svg" alt="location" class="w-[16px] h-[16px]" />
-                                <span class="text-[13px] font-[500] text-[#6B6C6B] leading-[24px]">Location 1, Location 2 + more</span>
-                            </div>
-    
-                            <div class="w-[1px] h-[18px] bg-[#BCC2C0]"></div>
-    
-                            <!-- Video Call -->
-                            <div class="flex items-center gap-[10px]">
-                                <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
-                                <span class="text-[13px] font-[500] text-[#6B6C6B] leading-[24px]">Remote</span>
-                            </div>
+                    <!-- User Profile [left] -->
+                    <div class="flex items-center gap-[32px] flex-wrap">
+                        <!-- User Avatar -->
+                        <div class="w-[130px] h-[130px] border-8 border-[#BEADA1] rounded-full overflow-hidden">
+                            <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
                         </div>
-    
-                        <h3 class="text-2xl font-[600] leading-[33px] text-[#6B6C6B]">Doula Name</h3>
-                        <span class="text-base leading-[22px] text-[#6B6C6B]">Business Name if Different</span>
-                        
-                        <!-- User Rating -->
-                        <div class="flex items-center gap-[8px]">
-                            <!-- Rate -->
-                            <div class="flex items-center">
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
-                            </div>
-                            <a href="#" title="reviews" class="text-[12px] leading-[18px] text-[#6B6C6B] underline underline-offset-4">(50 reviews)</a>
-                        </div>
-    
-                    </div>    
-                </div>
-    
-                <!-- User Contact [right] -->
-                <div class="flex flex-col gap-y-[16px]">
-                    <div class="flex items-center gap-[8px]">
-                        <img src="img/sp-email.svg" alt="star" class="w-[24px] h-[24px]" />
-                        <a href="mailto: doulaamy@email.com" class="leading-[17px] text-[#464A48] text-[14px]">doulaamy@email.com</a>
-                    </div>
-                    <div class="flex items-center gap-[8px]">
-                        <img src="img/sp-phone.svg" alt="star" class="w-[24px] h-[24px]" />
-                        <a href="tel:(123)456-7890" class="leading-[17px] text-[#464A48] text-[14px]">(123)456-7890</a>
-                    </div>
-                    <div class="flex items-center gap-[8px]">
-                        <img src="img/sp-web.svg" alt="star" class="w-[24px] h-[24px]" />
-                        <a href="www.amywebsite.com" class="leading-[17px] text-[#464A48] text-[14px]">www.amywebsite.com</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Location and Availability -->
-        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-
-            <!-- Location card -->
-            <div class="bg-[#F9F3EF] sm:col-span-3 rounded-2xl p-[32px]">
-                <div class="flex flex-col justify-between gap-y-[46px]">
-                    <div class="space-y-[16px]">
-                        <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Location</h3>
+        
+                        <!-- User Details -->
                         <div class="flex flex-col gap-y-[8px]">
-                            <span>I work at the following locations:</span>
+                            <div class="flex items-center gap-[16px]">
+        
+                                <!-- Location -->
+                                <div class="flex items-center gap-[4px]">
+                                    <img src="img/sp-location.svg" alt="location" class="w-[16px] h-[16px]" />
+                                    <span class="text-[13px] font-[500] text-[#6B6C6B] leading-[24px]">Location 1, Location 2 + more</span>
+                                </div>
+        
+                                <div class="w-[1px] h-[18px] bg-[#BCC2C0]"></div>
+        
+                                <!-- Video Call -->
+                                <div class="flex items-center gap-[10px]">
+                                    <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
+                                    <span class="text-[13px] font-[500] text-[#6B6C6B] leading-[24px]">Remote</span>
+                                </div>
+                            </div>
+        
+                            <h3 class="text-2xl font-[600] leading-[33px] text-[#6B6C6B]">Doula Name</h3>
+                            <span class="text-base leading-[22px] text-[#6B6C6B]">Business Name if Different</span>
+                            
+                            <!-- User Rating -->
+                            <div class="flex items-center gap-[8px]">
+                                <!-- Rate -->
+                                <div class="flex items-center">
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[26px] h-[26px] mx-[-2px]" />
+                                </div>
+                                <a href="#" title="reviews" class="text-[12px] leading-[18px] text-[#6B6C6B] underline underline-offset-4">(50 reviews)</a>
+                            </div>
+        
+                        </div>    
+                    </div>
+        
+                    <!-- User Contact [right] -->
+                    <div class="flex flex-col gap-y-[16px]">
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-email.svg" alt="star" class="w-[24px] h-[24px]" />
+                            <a href="mailto: doulaamy@email.com" class="leading-[17px] text-[#464A48] text-[14px]">doulaamy@email.com</a>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-phone.svg" alt="star" class="w-[24px] h-[24px]" />
+                            <a href="tel:(123)456-7890" class="leading-[17px] text-[#464A48] text-[14px]">(123)456-7890</a>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <img src="img/sp-web.svg" alt="star" class="w-[24px] h-[24px]" />
+                            <a href="www.amywebsite.com" class="leading-[17px] text-[#464A48] text-[14px]">www.amywebsite.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Location and Availability -->
+            <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                <!-- Location card -->
+                <div class="bg-[#F9F3EF] sm:col-span-3 rounded-2xl p-[32px]">
+                    <div class="flex flex-col justify-between gap-y-[46px]">
+                        <div class="space-y-[16px]">
+                            <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Location</h3>
+                            <div class="flex flex-col gap-y-[8px]">
+                                <span>I work at the following locations:</span>
+                                <div class="flex items-center gap-[10px]">
+                                    <img src="img/sp-location.svg" alt="location" class="w-[24px] h-[24px]" />
+                                    <span class="text-base leading-[22px] text-[#464A48]">All Locations Listed</span>
+                                </div>
+                                <div class="flex items-center gap-[10px]">
+                                    <img src="img/sp-video-call.svg" alt="video-call" class="w-[24px] h-[24px]" />
+                                    <span class="text-base leading-[22px] text-[#464A48]">Available Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="underline underline-offset-4">See my Lisenses</a>
+                    </div>
+                </div>
+
+                <!-- Avability card -->
+                <div class="bg-[#F9F3EF] sm:col-span-3 rounded-2xl p-[32px]">
+                    <div class="space-y-[16px]">
+                        <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Avability</h3>
+                        <ul class="flex flex-col gap-y-[2px] text-base leading-[22px]">
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Monday</span>
+                                <span>8:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Tuesday</span>
+                                <span>8:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Wednesday</span>
+                                <span>8:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Thursday</span>
+                                <span>8:00 AM - 10:00 PM</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Friday</span>
+                                <span>unavailable</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Saturday</span>
+                                <span>8:00 AM - 2:00 PM</span>
+                            </li>
+                            <li class="flex items-center justify-between gap-[8px] flex-wrap">
+                                <span class="font-[600]">Sunday</span>
+                                <span>unavailable</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Services -->
+            <div class="bg-[#F9F3EF] w-full rounded-2xl py-[28px] px-[32px] relative">
+
+                <!-- Navigation -->
+                <div class="swiper-button-left absolute top-[35px] left-auto right-[67px] w-[24px] h-[24px]">
+                    <img src="img/sp-nav-left.svg" alt="swiper-left" />
+                </div>
+                <div class="swiper-button-right absolute top-[35px] left-auto right-[33px] w-[24px] h-[24px]">
+                    <img src="img/sp-nav-right.svg" alt="swiper-right" />
+                </div>
+
+                <div class="space-y-[32px]">
+
+                    <!-- Subject -->
+                    <div class="space-y-[16px]">
+                        <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Services to add to the Registry</h3>
+                        <p class="text-base leading-[22px] text-[#464A48]">Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here.</p>
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper servSlide">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
+
+                                    <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
+                                        <div class="flex items-center gap-[8px]">
+                                            <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
+                                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
+                                            </div>
+                                            <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-[8px] my-[15px]">
+                                        <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
+                                        <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
+                                        <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
+                                    </div>
+
+                                    <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
+
+                                    <div class="flex items-center justify-between gap-[16px]">
+                                        <div class="flex flex-col gap-y-[2px]">
+                                            <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
+                                            <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
+                                        </div>
+
+                                        <!-- Quantity input -->
+                                        <div class="relative flex items-center w-[111px]">
+                                            <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                            <div class="relative">
+                                                <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
+                                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
+                                            </div>
+                                            <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
+                                        <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
+                                        <div class="flex items-center gap-x-[2px]">
+                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
+                                            <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
+                                            <div class="flex items-center">
+                                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
+                                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                                        <span class="leading-[22px] font-[600] text-base">Add to registry</span>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
+
+                                    <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
+                                        <div class="flex items-center gap-[8px]">
+                                            <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
+                                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
+                                            </div>
+                                            <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-[8px] my-[15px]">
+                                        <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
+                                        <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
+                                        <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
+                                    </div>
+
+                                    <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
+
+                                    <div class="flex items-center justify-between gap-[16px]">
+                                        <div class="flex flex-col gap-y-[2px]">
+                                            <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
+                                            <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
+                                        </div>
+
+                                        <!-- Quantity input -->
+                                        <div class="relative flex items-center w-[111px]">
+                                            <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                            <div class="relative">
+                                                <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
+                                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
+                                            </div>
+                                            <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
+                                        <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
+                                        <div class="flex items-center gap-x-[2px]">
+                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
+                                            <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
+                                            <div class="flex items-center">
+                                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
+                                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                                        <span class="leading-[22px] font-[600] text-base">Add to registry</span>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
+
+                                    <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
+                                        <div class="flex items-center gap-[8px]">
+                                            <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
+                                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
+                                            </div>
+                                            <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-[8px] my-[15px]">
+                                        <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
+                                        <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
+                                        <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
+                                    </div>
+
+                                    <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
+
+                                    <div class="flex items-center justify-between gap-[16px]">
+                                        <div class="flex flex-col gap-y-[2px]">
+                                            <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
+                                            <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
+                                        </div>
+
+                                        <!-- Quantity input -->
+                                        <div class="relative flex items-center w-[111px]">
+                                            <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                            <div class="relative">
+                                                <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
+                                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
+                                            </div>
+                                            <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
+                                        <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
+                                        <div class="flex items-center gap-x-[2px]">
+                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
+                                            <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
+                                            <div class="flex items-center">
+                                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
+                                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                                        <span class="leading-[22px] font-[600] text-base">Add to registry</span>
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
+
+                                    <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
+                                        <div class="flex items-center gap-[8px]">
+                                            <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
+                                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
+                                            </div>
+                                            <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-[8px] my-[15px]">
+                                        <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
+                                        <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
+                                        <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
+                                    </div>
+
+                                    <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
+
+                                    <div class="flex items-center justify-between gap-[16px]">
+                                        <div class="flex flex-col gap-y-[2px]">
+                                            <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
+                                            <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
+                                        </div>
+
+                                        <!-- Quantity input -->
+                                        <div class="relative flex items-center w-[111px]">
+                                            <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                            <div class="relative">
+                                                <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
+                                                <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
+                                            </div>
+                                            <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
+                                                <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
+                                        <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
+                                        <div class="flex items-center gap-x-[2px]">
+                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
+                                            <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
+                                            <div class="flex items-center">
+                                                <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
+                                                <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                                        <span class="leading-[22px] font-[600] text-base">Add to registry</span>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Certification -->
+            <div class="bg-white w-full border border-[#BCC2C0] rounded-2xl py-[28px] px-[32px] relative">
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev absolute top-[55px] left-auto right-[67px] w-[24px] h-[24px]">
+                    <img src="img/sp-nav-left.svg" alt="swiper-left" />
+                </div>
+                <div class="swiper-button-next absolute top-[55px] left-auto right-[33px] w-[24px] h-[24px]">
+                    <img src="img/sp-nav-right.svg" alt="swiper-right" />
+                </div>
+
+                <div class="space-y-[32px]">
+
+                    <!-- Subject -->
+                    <div class="space-y-[16px]">
+                        <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Certification & Crededentials</h3>
+                        <p class="text-base leading-[22px] text-[#464A48]">Here you can see my Certification</p>
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper crfSlide">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
+                            </div>
+
+                            <!-- Slider item -->
+                            <div class="swiper-slide rounded-[12px]">
+                                <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="mt-[30px]">
+                <h3 class="font-[600] text-[#323735] leading-[33px] text-2xl">Reviews</h3>
+
+                <!-- Reviews header -->
+                <div class="flex items-center justify-between flex-wrap gap-[40px] mt-[24px]">
+
+                    <div class="flex items-center gap-x-[120px] gap-y-[30px] w-full sm:w-[55%]">
+
+                        <!-- Rate score -->
+                        <div class="text-center">
+                            <span class="font-ins font-[500] text-[80px] leading-[88px] text-[#323735]">4.8</span>
+        
+                            <div class="flex items-center">
+                                <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
+                                <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
+                                <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
+                                <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
+                                <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
+                            </div>
+                            <span class="text-[16px] leading-[26px] text-[#323735] font-ins mt-[6px]">(3 Ratings)</span>
+                        </div>
+
+                        <!-- Rate progress bar -->
+                        <div class="w-full">
+                            <!-- Rate progress bar [5 star] -->
                             <div class="flex items-center gap-[10px]">
-                                <img src="img/sp-location.svg" alt="location" class="w-[24px] h-[24px]" />
-                                <span class="text-base leading-[22px] text-[#464A48]">All Locations Listed</span>
+                                <div class="flex items-center gap-x-[4px] mr-[2px]">
+                                    <span class="leading-[21px] text-sm text-[#323735]">5</span>
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
+                                </div>
+        
+                                <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
+                                    <div class="bg-[#FF9900] h-[8px]" style="width: 80%"></div>
+                                </div>
+        
+                                <span class="leading-[21px] text-sm text-[#323735]">80%</span>
                             </div>
+        
+                            <!-- Rate progress bar [4 star] -->
                             <div class="flex items-center gap-[10px]">
-                                <img src="img/sp-video-call.svg" alt="video-call" class="w-[24px] h-[24px]" />
-                                <span class="text-base leading-[22px] text-[#464A48]">Available Online</span>
+                                <div class="flex items-center gap-x-[4px] mr-[2px]">
+                                    <span class="leading-[21px] text-sm text-[#323735]">4</span>
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
+                                </div>
+        
+                                <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
+                                    <div class="bg-[#FF9900] h-[8px]" style="width: 80%"></div>
+                                </div>
+        
+                                <span class="leading-[21px] text-sm text-[#323735]">80%</span>
                             </div>
-                        </div>
-                    </div>
-                    <a href="#" class="underline underline-offset-4">See my Lisenses</a>
-                </div>
-            </div>
-
-            <!-- Avability card -->
-            <div class="bg-[#F9F3EF] sm:col-span-3 rounded-2xl p-[32px]">
-                <div class="space-y-[16px]">
-                    <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Avability</h3>
-                    <ul class="flex flex-col gap-y-[2px] text-base leading-[22px]">
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Monday</span>
-                            <span>8:00 AM - 10:00 PM</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Tuesday</span>
-                            <span>8:00 AM - 10:00 PM</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Wednesday</span>
-                            <span>8:00 AM - 10:00 PM</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Thursday</span>
-                            <span>8:00 AM - 10:00 PM</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Friday</span>
-                            <span>unavailable</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Saturday</span>
-                            <span>8:00 AM - 2:00 PM</span>
-                        </li>
-                        <li class="flex items-center justify-between gap-[8px] flex-wrap">
-                            <span class="font-[600]">Sunday</span>
-                            <span>unavailable</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Services -->
-        <div class="bg-[#F9F3EF] w-full rounded-2xl py-[28px] px-[32px] relative">
-
-            <!-- Navigation -->
-            <div class="swiper-button-left absolute top-[35px] left-auto right-[67px] w-[24px] h-[24px]">
-                <img src="img/sp-nav-left.svg" alt="swiper-left" />
-            </div>
-            <div class="swiper-button-right absolute top-[35px] left-auto right-[33px] w-[24px] h-[24px]">
-                <img src="img/sp-nav-right.svg" alt="swiper-right" />
-            </div>
-
-            <div class="space-y-[32px]">
-
-                <!-- Subject -->
-                <div class="space-y-[16px]">
-                    <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Services to add to the Registry</h3>
-                    <p class="text-base leading-[22px] text-[#464A48]">Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here. Description about the services entered into profile goes here.</p>
-                </div>
-
-                <!-- Swiper -->
-                <div class="swiper servSlide">
-                    <div class="swiper-wrapper">
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
-
-                                <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
-                                    <div class="flex items-center gap-[8px]">
-                                        <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
-                                            <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
-                                        </div>
-                                        <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
-                                    </div>
+        
+                            <!-- Rate progress bar [3 star] -->
+                            <div class="flex items-center gap-[10px]">
+                                <div class="flex items-center gap-x-[4px] mr-[2px]">
+                                    <span class="leading-[21px] text-sm text-[#323735]">3</span>
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
                                 </div>
-
-                                <div class="space-y-[8px] my-[15px]">
-                                    <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
-                                    <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
+        
+                                <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
+                                    <div class="bg-[#FF9900] h-[8px]" style="width: 10%"></div>
                                 </div>
-
-                                <div class="flex items-center gap-[6px]">
-                                    <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
-                                    <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
+        
+                                <span class="leading-[21px] text-sm text-[#323735]">10%</span>
+                            </div>
+        
+                            <!-- Rate progress bar [2 star] -->
+                            <div class="flex items-center gap-[10px]">
+                                <div class="flex items-center gap-x-[4px] mr-[2px]">
+                                    <span class="leading-[21px] text-sm text-[#323735]">2</span>
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
                                 </div>
-
-                                <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
-
-                                <div class="flex items-center justify-between gap-[16px]">
-                                    <div class="flex flex-col gap-y-[2px]">
-                                        <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
-                                        <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
-                                    </div>
-
-                                    <!-- Quantity input -->
-                                    <div class="relative flex items-center w-[111px]">
-                                        <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                        <div class="relative">
-                                            <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
-                                            <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
-                                        </div>
-                                        <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                    </div>
+        
+                                <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
+                                    <div class="bg-[#FF9900] h-[8px]" style="width: 10%"></div>
                                 </div>
-
-                                <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
-                                    <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
-                                    <div class="flex items-center gap-x-[2px]">
-                                        <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
-                                        <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
-                                        <div class="flex items-center">
-                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
-                                            <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
-                                        </div>
-                                    </div>
+        
+                                <span class="leading-[21px] text-sm text-[#323735]">10%</span>
+                            </div>
+        
+                            <!-- Rate progress bar [1 star] -->
+                            <div class="flex items-center gap-[10px]">
+                                <div class="flex items-center gap-x-[4px] mr-[2px]">
+                                    <span class="leading-[21px] text-sm text-[#323735]">1</span>
+                                    <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
                                 </div>
-
-                                <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                                    <span class="leading-[22px] font-[600] text-base">Add to registry</span>
-                                </button>
-
+        
+                                <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
+                                    <div class="bg-[#FF9900] h-[8px]" style="width: 0%"></div>
+                                </div>
+        
+                                <span class="leading-[21px] text-sm text-[#323735]">0%</span>
                             </div>
                         </div>
 
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
-
-                                <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
-                                    <div class="flex items-center gap-[8px]">
-                                        <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
-                                            <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
-                                        </div>
-                                        <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
-                                    </div>
-                                </div>
-
-                                <div class="space-y-[8px] my-[15px]">
-                                    <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
-                                    <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
-                                </div>
-
-                                <div class="flex items-center gap-[6px]">
-                                    <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
-                                    <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
-                                </div>
-
-                                <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
-
-                                <div class="flex items-center justify-between gap-[16px]">
-                                    <div class="flex flex-col gap-y-[2px]">
-                                        <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
-                                        <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
-                                    </div>
-
-                                    <!-- Quantity input -->
-                                    <div class="relative flex items-center w-[111px]">
-                                        <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                        <div class="relative">
-                                            <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
-                                            <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
-                                        </div>
-                                        <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
-                                    <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
-                                    <div class="flex items-center gap-x-[2px]">
-                                        <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
-                                        <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
-                                        <div class="flex items-center">
-                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
-                                            <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                                    <span class="leading-[22px] font-[600] text-base">Add to registry</span>
-                                </button>
-
-                            </div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
-
-                                <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
-                                    <div class="flex items-center gap-[8px]">
-                                        <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
-                                            <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
-                                        </div>
-                                        <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
-                                    </div>
-                                </div>
-
-                                <div class="space-y-[8px] my-[15px]">
-                                    <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
-                                    <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
-                                </div>
-
-                                <div class="flex items-center gap-[6px]">
-                                    <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
-                                    <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
-                                </div>
-
-                                <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
-
-                                <div class="flex items-center justify-between gap-[16px]">
-                                    <div class="flex flex-col gap-y-[2px]">
-                                        <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
-                                        <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
-                                    </div>
-
-                                    <!-- Quantity input -->
-                                    <div class="relative flex items-center w-[111px]">
-                                        <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                        <div class="relative">
-                                            <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
-                                            <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
-                                        </div>
-                                        <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
-                                    <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
-                                    <div class="flex items-center gap-x-[2px]">
-                                        <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
-                                        <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
-                                        <div class="flex items-center">
-                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
-                                            <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                                    <span class="leading-[22px] font-[600] text-base">Add to registry</span>
-                                </button>
-
-                            </div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-white w-full rounded-[12px] border-1 border-[#BCC2C0] p-[16px]">
-
-                                <div class="bg-[#BEADA1] py-[5px] px-[9px] rounded w-max">
-                                    <div class="flex items-center gap-[8px]">
-                                        <div class="w-[20px] h-[20px] border-2 border-white rounded-full overflow-hidden">
-                                            <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
-                                        </div>
-                                        <span class="text-white font-[500] leading-[18px] text-[14px]">Provided by Amy</span>   
-                                    </div>
-                                </div>
-
-                                <div class="space-y-[8px] my-[15px]">
-                                    <h3 class="text-[18px] font-[600] leading-[22px] text-[#323735]">Postpartum Doula Service </h3>
-                                    <p class="text-[#6B6C6B] text-[16px] leading-[20px]">Here you can collect the money to spend on a night nurse. You can choose a provider later.</p>
-                                </div>
-
-                                <div class="flex items-center gap-[6px]">
-                                    <img src="img/sp-heart.svg" alt="heart" class="w-[18px] h-[18px]" />
-                                    <span class="font-[500] leading-[19px] text-[#6B6C6B] text-[14px]">We recommend to save $800</span>
-                                </div>
-
-                                <div class="w-full h-[1px] my-[15px] bg-[#F1F1F1]"></div>
-
-                                <div class="flex items-center justify-between gap-[16px]">
-                                    <div class="flex flex-col gap-y-[2px]">
-                                        <h4 class="leading-[21px] font-[600] text-[#464A48] text-[14px]">Amount to Request</h4>
-                                        <span class="text-[13px] text-[#6B6C6B] leading-[14px]">($ to spend)</span>
-                                    </div>
-
-                                    <!-- Quantity input -->
-                                    <div class="relative flex items-center w-[111px]">
-                                        <button type="button" id="decrement-button" data-action="minus" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-r-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-minus.svg" alt="minus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                        <div class="relative">
-                                            <span class="font-[600] leading-[19px] text-[14px] absolute top-[50%] -translate-y-[50%] left-[6px]">$</span>
-                                            <input type="number" name="product-qty" id="quantity-input" min="0" value="1" class="bg-[#FAFAFA] border border-x-0 border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[14px] focus:border-[#BCC2C0] w-[57px] py-[7px] pl-[18px] pr-[7px]" />
-                                        </div>
-                                        <button type="button" id="increment-button" data-action="add" class="w-[27px] bg-[#FAFAFA] hover:bg-[#FAFAFA] border border-[#BCC2C0] rounded-[6px] rounded-l-none py-[7px] px-[6px] focus:ring-gray-100 focus:outline-none">
-                                            <img src="img/sp-plus.svg" alt="plus" class="w-[19px] h-[19px]" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center justify-between gap-[16px] flex-wrap mt-[14px]">
-                                    <span class="leading-[21px] font-[600] text-[#464A48] text-[14px]">What Friends Pay:</span>
-                                    <div class="flex items-center gap-x-[2px]">
-                                        <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">16</span>
-                                        <img src="img//sp-present.svg" alt="present" class="w-[24px] h-[24px] mt-[-4px]" />
-                                        <div class="flex items-center">
-                                            <span class="leading-[18px] font-[600] text-[#6A976E] text-[14px]">at $50</span>
-                                            <span class="leading-[18px] font-[600] text-[#6B6C6B] text-[12px]">/each</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] py-[11px] px-[16px] border border-[#464A48] hover:border-[#464A48] rounded-lg w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                                    <span class="leading-[22px] font-[600] text-base">Add to registry</span>
-                                </button>
-
-                            </div>
-                        </div>
                     </div>
 
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Certification -->
-        <div class="bg-white w-full border border-[#BCC2C0] rounded-2xl py-[28px] px-[32px] relative">
-
-            <!-- Navigation -->
-            <div class="swiper-button-prev absolute top-[55px] left-auto right-[67px] w-[24px] h-[24px]">
-                <img src="img/sp-nav-left.svg" alt="swiper-left" />
-            </div>
-            <div class="swiper-button-next absolute top-[55px] left-auto right-[33px] w-[24px] h-[24px]">
-                <img src="img/sp-nav-right.svg" alt="swiper-right" />
-            </div>
-
-            <div class="space-y-[32px]">
-
-                <!-- Subject -->
-                <div class="space-y-[16px]">
-                    <h3 class="text-[21px] font-[600] leading-[29px] text-[#323735]">Certification & Crededentials</h3>
-                    <p class="text-base leading-[22px] text-[#464A48]">Here you can see my Certification</p>
-                </div>
-
-                <!-- Swiper -->
-                <div class="swiper crfSlide">
-                    <div class="swiper-wrapper">
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="swiper-slide rounded-[12px]">
-                            <div class="bg-[#F1F1F1] h-[250px] w-full rounded-[12px] p-[16px]"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Reviews -->
-        <div class="mt-[30px]">
-            <h3 class="font-[600] text-[#323735] leading-[33px] text-2xl">Reviews</h3>
-
-            <!-- Reviews header -->
-            <div class="flex items-center justify-between flex-wrap gap-[40px] mt-[24px]">
-
-                <div class="flex items-center gap-x-[120px] gap-y-[30px] w-full sm:w-[55%]">
-
-                    <!-- Rate score -->
-                    <div class="text-center">
-                        <span class="font-ins font-[500] text-[80px] leading-[88px] text-[#323735]">4.8</span>
-    
-                        <div class="flex items-center">
-                            <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
-                            <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
-                            <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
-                            <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
-                            <img src="img/sp-star-full.svg" alt="star" class="w-[20px] h-[20px] mx-[-2px]" />
-                        </div>
-                        <span class="text-[16px] leading-[26px] text-[#323735] font-ins mt-[6px]">(3 Ratings)</span>
-                    </div>
-
-                    <!-- Rate progress bar -->
-                    <div class="w-full">
-                        <!-- Rate progress bar [5 star] -->
-                        <div class="flex items-center gap-[10px]">
-                            <div class="flex items-center gap-x-[4px] mr-[2px]">
-                                <span class="leading-[21px] text-sm text-[#323735]">5</span>
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
-                            </div>
-    
-                            <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
-                                <div class="bg-[#FF9900] h-[8px]" style="width: 80%"></div>
-                            </div>
-    
-                            <span class="leading-[21px] text-sm text-[#323735]">80%</span>
-                        </div>
-    
-                        <!-- Rate progress bar [4 star] -->
-                        <div class="flex items-center gap-[10px]">
-                            <div class="flex items-center gap-x-[4px] mr-[2px]">
-                                <span class="leading-[21px] text-sm text-[#323735]">4</span>
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
-                            </div>
-    
-                            <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
-                                <div class="bg-[#FF9900] h-[8px]" style="width: 80%"></div>
-                            </div>
-    
-                            <span class="leading-[21px] text-sm text-[#323735]">80%</span>
-                        </div>
-    
-                        <!-- Rate progress bar [3 star] -->
-                        <div class="flex items-center gap-[10px]">
-                            <div class="flex items-center gap-x-[4px] mr-[2px]">
-                                <span class="leading-[21px] text-sm text-[#323735]">3</span>
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
-                            </div>
-    
-                            <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
-                                <div class="bg-[#FF9900] h-[8px]" style="width: 10%"></div>
-                            </div>
-    
-                            <span class="leading-[21px] text-sm text-[#323735]">10%</span>
-                        </div>
-    
-                        <!-- Rate progress bar [2 star] -->
-                        <div class="flex items-center gap-[10px]">
-                            <div class="flex items-center gap-x-[4px] mr-[2px]">
-                                <span class="leading-[21px] text-sm text-[#323735]">2</span>
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
-                            </div>
-    
-                            <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
-                                <div class="bg-[#FF9900] h-[8px]" style="width: 10%"></div>
-                            </div>
-    
-                            <span class="leading-[21px] text-sm text-[#323735]">10%</span>
-                        </div>
-    
-                        <!-- Rate progress bar [1 star] -->
-                        <div class="flex items-center gap-[10px]">
-                            <div class="flex items-center gap-x-[4px] mr-[2px]">
-                                <span class="leading-[21px] text-sm text-[#323735]">1</span>
-                                <img src="img/sp-star-full.svg" alt="star" class="w-[18px] h-[18px]" />
-                            </div>
-    
-                            <div class="w-full bg-[#F1F1F1] rounded-[1px] h-[8px] flex items-center">
-                                <div class="bg-[#FF9900] h-[8px]" style="width: 0%"></div>
-                            </div>
-    
-                            <span class="leading-[21px] text-sm text-[#323735]">0%</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Write a review -->
-                <div class="flex flex-col">
-
-                    <!-- Rate -->
-                    <div class="flex items-center">
-                        <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
-                        <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
-                        <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
-                        <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
-                        <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
-                    </div>
-
-
-                    <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent hover:bg-transparent hover:text-[#464A48] py-[16px] px-[33px] border border-[#323735] hover:border-[#323735] rounded-lg w-full">
-                        <span class="leading-[25px] font-[700] text-[#323735] text-[18px]">Write a  Review</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Reviews form -->
-            <div class="flex flex-col mt-[56px] mb-[40px] gap-y-[24px]">
-                <p class="font-[600] text-lg leading-[25px] text-[#323735]">Only reviews from verified clients of this service provider will be posted.</p>
-
-                <!-- Form -->
-                <form class="w-full" action="" method="">
-                    <div class="grid grid-cols-1 gap-x-[24px] gap-y-[24px] sm:grid-cols-6">
-
-                        <!-- Name -->
-                        <div class="sm:col-span-3">
-                            <label for="first-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">First name</label>
-                            <div class="mt-[10px]">
-                                <input type="text" name="first-name" id="first-name" placeholder="First Name"
-                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
-                            </div>
-                        </div>
-                
-                        <!-- Email -->
-                        <div class="sm:col-span-3">
-                            <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Email address</label>
-                            <div class="mt-[10px]">
-                              <input id="email" name="email" type="email" placeholder="E-Mail" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
-                            </div>
-                        </div>
+                    <!-- Write a review -->
+                    <div class="flex flex-col">
 
                         <!-- Rate -->
-                        <div class="sm:col-span-3">
-                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your Rating</label>
-                            <div class="flex items-center">
-                                <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
-                                <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
-                                <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
-                                <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
-                                <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
-                            </div>
+                        <div class="flex items-center">
+                            <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
+                            <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
+                            <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
+                            <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
+                            <img src="img/sp-star-gray.svg" alt="star-gray" class="w-[43px] h-[43px]" />
                         </div>
 
-                        <!-- Select -->
-                        <div class="sm:col-span-3">
-                            <label for="country" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Which Service you want to review</label>
-                            <div class="mt-[10px]">
-                              <select id="country" name="country" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
-                                <option>Choose your Service</option>
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                              </select>
-                            </div>
-                        </div>
 
-                        <!-- Textarea -->
-                        <div class="col-span-full">
-                            <label for="about" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Your Review</label>
-                            <div class="mt-[10px]">
-                                <textarea id="about" name="about" rows="5" placeholder="Enter your Review here"
-                                    class="block resize-none w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]"></textarea>
-                            </div>
-                            <p class="mt-[10px] text-sm leading-[21px] text-[#6B6C6B]">Maximum 2000 characters.</p>
-                        </div>
-                    </div>
-
-                    <!-- Submit -->
-                    <div class="flex items-center justify-center mt-[24px]">
-                        <button type="submit"
-                            class="text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] rounded-lg text-[18px] w-full sm:w-auto px-[30px] py-[16px] text-center">Submit Review</button>
-                    </div>
-                    <div class="flex items-center justify-center gap-[16px] mt-[24px] py-[16px] px-[16px] sm:px-[90px] bg-[#F9F3EF] rounded-[10px]">
-                        <img src="img/sp-check.svg" alt="check" class="w-[32px] h-[32px]" /> 
-                        <p class="w-full sm:w-[66%] leading-[22px] text-[16px] text-[#323735] font-[600]">You have successfully submitted your review! We will verify that you completed the service and will approve your review within 24 hours.</p>   
-                    </div>
-                </form>
-            </div>
-
-            <!-- Reviews filter -->
-            <div class="flex items-center justify-between mt-[56px]">
-                <h3 class="text-2xl font-600 text-[#323735] leading-[33px]">3 Reviews</h3>
-
-                <div class="flex items-center gap-[8px]">
-                    <label class="text-[15px] text-[#323735] leading-[22px]">Sort By:</label>
-                    <div class="relative inline-block text-left">
-                        <button id="dropdown-button" type="button" class="flex justify-center items-center gap-[8px] rounded-[6px] border border-[#464A48] px-[10px] py-[3px] bg-white hover:bg-white focus:outline-none" aria-haspopup="true" aria-expanded="false">
-                          <span id="dropdown-selected-option" class="font-[500] leading-[22px] text-[14px] text-[#464A48]">Newest</span>
-                          <img src="img/sp-caret-down.svg" alt="caret" id="caret" />
+                        <button class="flex items-center justify-center mt-[15px] gap-x-[12px] bg-transparent hover:bg-transparent hover:text-[#464A48] py-[16px] px-[33px] border border-[#323735] hover:border-[#323735] rounded-lg w-full">
+                            <span class="leading-[25px] font-[700] text-[#323735] text-[18px]">Write a  Review</span>
                         </button>
-                      <div id="dropdown-menu" class="origin-top-right absolute overflow-hidden w-full left-0 mt-2 border border-[#464A48] rounded-[6px] shadow-lg focus:outline-none bg-white hidden" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
-                        <div class="text-[#464A48]" role="none">
-                          <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 1</a>
-                          <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 2</a>
-                          <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 3</a>
-                        </div>
-                      </div>
                     </div>
                 </div>
-    
-            </div>
 
-            <!-- Reviews list -->
-            <div class="mt-[24px]">
-                <div class="flex flex-col gap-[24px]">
+                <!-- Reviews form -->
+                <div class="flex flex-col mt-[56px] mb-[40px] gap-y-[24px]">
+                    <p class="font-[600] text-lg leading-[25px] text-[#323735]">Only reviews from verified clients of this service provider will be posted.</p>
 
-                    <div class="flex flex-col gap-y-[12px]">
-                        <div class="flex items-center gap-[16px]">
+                    <!-- Form -->
+                    <form class="w-full" action="" method="">
+                        <div class="grid grid-cols-1 gap-x-[24px] gap-y-[24px] sm:grid-cols-6">
 
-                            <!-- User Avatar -->
-                            <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
-                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
+                            <!-- Name -->
+                            <div class="sm:col-span-3">
+                                <label for="first-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">First name</label>
+                                <div class="mt-[10px]">
+                                    <input type="text" name="first-name" id="first-name" placeholder="First Name"
+                                        class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                                </div>
+                            </div>
+                    
+                            <!-- Email -->
+                            <div class="sm:col-span-3">
+                                <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Email address</label>
+                                <div class="mt-[10px]">
+                                <input id="email" name="email" type="email" placeholder="E-Mail" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                                </div>
                             </div>
 
-                            <div class="flex flex-col gap-y-[2px]">
-
-                                <div class="flex items-center gap-[8px]">
-                                    <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
-
-                                    <!-- Rate -->
-                                    <div class="flex items-center">
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                    </div>
+                            <!-- Rate -->
+                            <div class="sm:col-span-3">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your Rating</label>
+                                <div class="flex items-center">
+                                    <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
+                                    <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
+                                    <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
+                                    <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
+                                    <img src="img/sp-star-gray.svg" alt="star" class="w-[35px] h-[35px]" />
                                 </div>
+                            </div>
 
-                                <div class="flex items-center gap-[12px]">
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
-                                    <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
+                            <!-- Select -->
+                            <div class="sm:col-span-3">
+                                <label for="country" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Which Service you want to review</label>
+                                <div class="mt-[10px]">
+                                <select id="country" name="country" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                                    <option>Choose your Service</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                </select>
                                 </div>
+                            </div>
 
+                            <!-- Textarea -->
+                            <div class="col-span-full">
+                                <label for="about" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Your Review</label>
+                                <div class="mt-[10px]">
+                                    <textarea id="about" name="about" rows="5" placeholder="Enter your Review here"
+                                        class="block resize-none w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]"></textarea>
+                                </div>
+                                <p class="mt-[10px] text-sm leading-[21px] text-[#6B6C6B]">Maximum 2000 characters.</p>
                             </div>
                         </div>
 
-                        <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
+                        <!-- Submit -->
+                        <div class="flex items-center justify-center mt-[24px]">
+                            <button type="submit"
+                                class="text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] rounded-lg text-[18px] w-full sm:w-auto px-[30px] py-[16px] text-center">Submit Review</button>
+                        </div>
+                        <div class="flex items-center justify-center gap-[16px] mt-[24px] py-[16px] px-[16px] sm:px-[90px] bg-[#F9F3EF] rounded-[10px]">
+                            <img src="img/sp-check.svg" alt="check" class="w-[32px] h-[32px]" /> 
+                            <p class="w-full sm:w-[66%] leading-[22px] text-[16px] text-[#323735] font-[600]">You have successfully submitted your review! We will verify that you completed the service and will approve your review within 24 hours.</p>   
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Reviews filter -->
+                <div class="flex items-center justify-between mt-[56px]">
+                    <h3 class="text-2xl font-600 text-[#323735] leading-[33px]">3 Reviews</h3>
+
+                    <div class="flex items-center gap-[8px]">
+                        <label class="text-[15px] text-[#323735] leading-[22px]">Sort By:</label>
+                        <div class="relative inline-block text-left">
+                            <button id="dropdown-button" type="button" class="flex justify-center items-center gap-[8px] rounded-[6px] border border-[#464A48] px-[10px] py-[3px] bg-white hover:bg-white focus:outline-none" aria-haspopup="true" aria-expanded="false">
+                            <span id="dropdown-selected-option" class="font-[500] leading-[22px] text-[14px] text-[#464A48]">Newest</span>
+                            <img src="img/sp-caret-down.svg" alt="caret" id="caret" />
+                            </button>
+                        <div id="dropdown-menu" class="origin-top-right absolute overflow-hidden w-full left-0 mt-2 border border-[#464A48] rounded-[6px] shadow-lg focus:outline-none bg-white hidden" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
+                            <div class="text-[#464A48]" role="none">
+                            <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 1</a>
+                            <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 2</a>
+                            <a href="#" class="block px-4 py-2 text-left text-[14px] text-[#464A48] hover:bg-[#F9F3EF] focus:bg-[#F9F3EF]" role="menuitem">Option 3</a>
+                            </div>
+                        </div>
+                        </div>
                     </div>
+        
+                </div>
 
-                    <!-- Reply -->
-                    <div class="flex flex-col gap-y-[12px] py-[20px] px-[24px] bg-[#F9F3EF] rounded-[16px]">
-                        <div class="flex items-center gap-[16px]">
+                <!-- Reviews list -->
+                <div class="mt-[24px]">
+                    <div class="flex flex-col gap-[24px]">
 
-                            <!-- User Avatar -->
-                            <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
-                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
-                            </div>
+                        <div class="flex flex-col gap-y-[12px]">
+                            <div class="flex items-center gap-[16px]">
 
-                            <div class="flex flex-col gap-y-[2px]">
+                                <!-- User Avatar -->
+                                <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
+                                </div>
 
-                                <div class="flex items-center gap-[8px]">
-                                    <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
+                                <div class="flex flex-col gap-y-[2px]">
 
-                                    <!-- Rate -->
-                                    <div class="flex items-center">
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                    <div class="flex items-center gap-[8px]">
+                                        <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
+
+                                        <!-- Rate -->
+                                        <div class="flex items-center">
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="flex items-center gap-[12px]">
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
-                                    <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
-                                </div>
+                                    <div class="flex items-center gap-[12px]">
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
+                                        <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
+                                    </div>
 
+                                </div>
                             </div>
+
+                            <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
                         </div>
 
-                        <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
-                    </div>
+                        <!-- Reply -->
+                        <div class="flex flex-col gap-y-[12px] py-[20px] px-[24px] bg-[#F9F3EF] rounded-[16px]">
+                            <div class="flex items-center gap-[16px]">
 
-                    <div class="flex flex-col gap-y-[12px]">
-                        <div class="flex items-center gap-[16px]">
+                                <!-- User Avatar -->
+                                <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
+                                </div>
 
-                            <!-- User Avatar -->
-                            <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
-                                <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
-                            </div>
+                                <div class="flex flex-col gap-y-[2px]">
 
-                            <div class="flex flex-col gap-y-[2px]">
+                                    <div class="flex items-center gap-[8px]">
+                                        <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
 
-                                <div class="flex items-center gap-[8px]">
-                                    <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
-
-                                    <!-- Rate -->
-                                    <div class="flex items-center">
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
-                                        <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                        <!-- Rate -->
+                                        <div class="flex items-center">
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="flex items-center gap-[12px]">
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
-                                    <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
-                                    <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
-                                </div>
+                                    <div class="flex items-center gap-[12px]">
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
+                                        <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
+                                    </div>
 
+                                </div>
                             </div>
+
+                            <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
                         </div>
 
-                        <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
+                        <div class="flex flex-col gap-y-[12px]">
+                            <div class="flex items-center gap-[16px]">
+
+                                <!-- User Avatar -->
+                                <div class="w-[52px] h-[52px] rounded-full overflow-hidden bg-[#BCC2C0]">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />        
+                                </div>
+
+                                <div class="flex flex-col gap-y-[2px]">
+
+                                    <div class="flex items-center gap-[8px]">
+                                        <span class="font-600 leading-[22px] text-base text-[#323735]">Guy</span>
+
+                                        <!-- Rate -->
+                                        <div class="flex items-center">
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                            <img src="img/sp-star-full.svg" alt="star" class="w-[16px] h-[16px]" />
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-[12px]">
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm">Postpantrum Doula Service</span>
+                                        <div class="w-[1px] h-[20px] bg-[#F1F1F1]"></div>
+                                        <span class="text-[#BCC2C0] leading-[21px] text-sm"">08.08.2024</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <p class="text-base leading-[22px] text-[#323735]">Lorem ipsum dolor sit amet consectetur. Cursus nunc pharetra arcu quam turpis risus amet turpis. Facilisis elementum tincidunt pellentesque sed rutrum enim.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

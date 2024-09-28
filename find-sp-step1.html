@@ -9,125 +9,127 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
-
-        <!-- User Info -->
-        <div class="bg-[#F9F3EF] w-full rounded-2xl p-[36px]">
-
-            <div class="flex flex-col text-center gap-y-[16px]">
-                <h3 class="text-[32px] font-[700] leading-[38px] text-[#323735]">Find [Doula] Services 
-                    <br> <span class="font-lora italic text-[#66966B]">right nearby</span>!</h3>
-                <p class="text-[#464A48] leading-[24px] text-[16px] font-[300]">Enter your ZIP code to find local service providers you can trust.</p>
-            </div>
-
-            <div class="flex items-center justify-center flex-wrap gap-[16px] mt-[40px]">
-                <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"
-                class="block w-full sm:w-[280px] rounded-[6px] border border-[#D8C3B4] py-[13px] px-[20px] text-[#6B6C6B] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
-                
-                <button type="submit"
-                class="text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-[4px] text-[18px] w-full sm:w-[200px] px-[30px] py-[12px] text-center">Search</button>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-y-[35px]">
-            <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All Service Providers</h3>
-            <div class="flex gap-x-[51px] gap-y-[24px]">
-                <div class="w-[233px] hidden md:block">
-                    filter
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
+    
+            <!-- User Info -->
+            <div class="bg-[#F9F3EF] w-full rounded-2xl p-[36px]">
+    
+                <div class="flex flex-col text-center gap-y-[16px]">
+                    <h3 class="text-[32px] font-[700] leading-[38px] text-[#323735]">Find [Doula] Services 
+                        <br> <span class="font-lora italic text-[#66966B]">right nearby</span>!</h3>
+                    <p class="text-[#464A48] leading-[24px] text-[16px] font-[300]">Enter your ZIP code to find local service providers you can trust.</p>
                 </div>
-                <div class="md:w-[816px] w-full">
-                    <div class="flex items-center justify-between gap-[20px]">
-                        <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
-                        <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">6 providers</span>
+    
+                <div class="flex items-center justify-center flex-wrap gap-[16px] mt-[40px]">
+                    <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"
+                    class="block w-full sm:w-[280px] rounded-[6px] border border-[#D8C3B4] py-[13px] px-[20px] text-[#6B6C6B] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                    
+                    <button type="submit"
+                    class="text-white bg-[#6A976E] hover:bg-[#6A976E] focus:outline-none font-[700] leading-[25px] rounded-[4px] text-[18px] w-full sm:w-[200px] px-[30px] py-[12px] text-center">Search</button>
+                </div>
+            </div>
+    
+            <div class="flex flex-col gap-y-[35px]">
+                <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All Service Providers</h3>
+                <div class="flex gap-x-[51px] gap-y-[24px]">
+                    <div class="w-[233px] hidden md:block">
+                        filter
                     </div>
-
-                    <div class="gap-x-[26px] gap-y-[24px] mt-[19px] grid grid-cols-1 sm:grid-cols-6">
-
-                        <!-- Provider card -->
-                        <div class="sm:col-span-3 md:col-span-2 p-[10px] border rounded-[9px] bg-white">
-
-                            <!-- Provider card top -->
-                            <div class="bg-[#F9F3EF] w-full rounded-2xl py-[20px] px-[16px] flex flex-col items-center relative">
-            
-                                <!-- Favorite -->
-                                <a href="" class="absolute top-[6px] right-[7px]">
-                                    <img src="img/heart-o.svg" alt="expand" class="w-[24px] h-[24px]" />
-                                </a>
-            
-                                <!-- Avatar -->
-                                <div class="w-[100px] h-[100px] border-[6px] border-[#BEADA1] rounded-full overflow-hidden mb-[12px]">
-                                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />
-                                </div>
-                                
-                                <h3 class="text-[14px] font-[600] leading-[19px] text-[#464A48]">Doula Name</h3>
-                                <span class="text-[12px] leading-[17px] text-[#6B6C6B] mt-[2px]">Business Name if Different</span>
-                            </div>
-            
-                            <!-- Provider card body -->
-                            <div class="my-[20px]">
-            
-                                <div class="flex items-center gap-[16px]">
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="img/sp-location.svg" alt="location" class="w-[16px] h-[16px]" />
-                                        <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">In Presence</span>
-                                    </div>
-                                    <div class="w-[1px] h-[18px] bg-[#BCC2C0]"></div>
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
-                                        <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">Remote</span>
-                                    </div>
-                                </div>
-            
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postpartum Services</h3>
-                                <p class="text-[#6B6C6B] leading-[21px] text-sm mt-[10px]">I offer specialised Doula & Postnatal Services to support moms throughout their journey.</p>
-                                <p class="text-[#6B6C6B] leading-[18px] text-[12px] font-[600] mt-[20px]">Services: Birth Help, Home Birth & More</p>
-                                <div class="text-center mt-[20px]">
-                                    <a href="" class="underline underline-offset-4 text-[#464A48] leading-[16px] text-[13px] font-[700]">Learn More</a>
-                                </div>
-                            </div>
-
+                    <div class="md:w-[816px] w-full">
+                        <div class="flex items-center justify-between gap-[20px]">
+                            <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
+                            <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">6 providers</span>
                         </div>
-
-                        <!-- Provider card -->
-                        <div class="sm:col-span-3 md:col-span-2 p-[10px] border rounded-[9px] bg-white">
-
-                            <!-- Provider card top -->
-                            <div class="bg-[#F9F3EF] w-full rounded-2xl py-[20px] px-[16px] flex flex-col items-center relative">
-            
-                                <!-- Favorite -->
-                                <a href="" class="absolute top-[6px] right-[7px]">
-                                    <img src="img/heart-fill.svg" alt="expand" class="w-[24px] h-[24px]" />
-                                </a>
-            
-                                <!-- Avatar -->
-                                <div class="w-[100px] h-[100px] border-[6px] border-[#BEADA1] rounded-full overflow-hidden mb-[12px]">
-                                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />
+    
+                        <div class="gap-x-[26px] gap-y-[24px] mt-[19px] grid grid-cols-1 sm:grid-cols-6">
+    
+                            <!-- Provider card -->
+                            <div class="sm:col-span-3 md:col-span-2 p-[10px] border rounded-[9px] bg-white">
+    
+                                <!-- Provider card top -->
+                                <div class="bg-[#F9F3EF] w-full rounded-2xl py-[20px] px-[16px] flex flex-col items-center relative">
+                
+                                    <!-- Favorite -->
+                                    <a href="" class="absolute top-[6px] right-[7px]">
+                                        <img src="img/heart-o.svg" alt="expand" class="w-[24px] h-[24px]" />
+                                    </a>
+                
+                                    <!-- Avatar -->
+                                    <div class="w-[100px] h-[100px] border-[6px] border-[#BEADA1] rounded-full overflow-hidden mb-[12px]">
+                                        <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />
+                                    </div>
+                                    
+                                    <h3 class="text-[14px] font-[600] leading-[19px] text-[#464A48]">Doula Name</h3>
+                                    <span class="text-[12px] leading-[17px] text-[#6B6C6B] mt-[2px]">Business Name if Different</span>
                                 </div>
-                                
-                                <h3 class="text-[14px] font-[600] leading-[19px] text-[#464A48]">Doula Name</h3>
-                                <span class="text-[12px] leading-[17px] text-[#6B6C6B] mt-[2px]">Business Name if Different</span>
-                            </div>
-            
-                            <!-- Provider card body -->
-                            <div class="my-[20px]">
-            
-                                <div class="flex items-center gap-[16px]">
-                                    <div class="flex items-center gap-[6px]">
-                                        <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
-                                        <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">Remote</span>
+                
+                                <!-- Provider card body -->
+                                <div class="my-[20px]">
+                
+                                    <div class="flex items-center gap-[16px]">
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="img/sp-location.svg" alt="location" class="w-[16px] h-[16px]" />
+                                            <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">In Presence</span>
+                                        </div>
+                                        <div class="w-[1px] h-[18px] bg-[#BCC2C0]"></div>
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
+                                            <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">Remote</span>
+                                        </div>
+                                    </div>
+                
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postpartum Services</h3>
+                                    <p class="text-[#6B6C6B] leading-[21px] text-sm mt-[10px]">I offer specialised Doula & Postnatal Services to support moms throughout their journey.</p>
+                                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] font-[600] mt-[20px]">Services: Birth Help, Home Birth & More</p>
+                                    <div class="text-center mt-[20px]">
+                                        <a href="" class="underline underline-offset-4 text-[#464A48] leading-[16px] text-[13px] font-[700]">Learn More</a>
                                     </div>
                                 </div>
-            
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postpartum Services</h3>
-                                <p class="text-[#6B6C6B] leading-[21px] text-sm mt-[10px]">I offer specialised Doula & Postnatal Services to support moms throughout their journey.</p>
-                                <p class="text-[#6B6C6B] leading-[18px] text-[12px] font-[600] mt-[20px]">Services: Birth Help, Home Birth & More</p>
-                                <div class="text-center mt-[20px]">
-                                    <a href="" class="underline underline-offset-4 text-[#464A48] leading-[16px] text-[13px] font-[700]">Learn More</a>
-                                </div>
+    
                             </div>
-
+    
+                            <!-- Provider card -->
+                            <div class="sm:col-span-3 md:col-span-2 p-[10px] border rounded-[9px] bg-white">
+    
+                                <!-- Provider card top -->
+                                <div class="bg-[#F9F3EF] w-full rounded-2xl py-[20px] px-[16px] flex flex-col items-center relative">
+                
+                                    <!-- Favorite -->
+                                    <a href="" class="absolute top-[6px] right-[7px]">
+                                        <img src="img/heart-fill.svg" alt="expand" class="w-[24px] h-[24px]" />
+                                    </a>
+                
+                                    <!-- Avatar -->
+                                    <div class="w-[100px] h-[100px] border-[6px] border-[#BEADA1] rounded-full overflow-hidden mb-[12px]">
+                                        <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />
+                                    </div>
+                                    
+                                    <h3 class="text-[14px] font-[600] leading-[19px] text-[#464A48]">Doula Name</h3>
+                                    <span class="text-[12px] leading-[17px] text-[#6B6C6B] mt-[2px]">Business Name if Different</span>
+                                </div>
+                
+                                <!-- Provider card body -->
+                                <div class="my-[20px]">
+                
+                                    <div class="flex items-center gap-[16px]">
+                                        <div class="flex items-center gap-[6px]">
+                                            <img src="img/sp-video-call.svg" alt="video-call" class="w-[16px] h-[16px]" />
+                                            <span class="text-[#6B6C6B] leading-[24px] text-[13px] font-[500]">Remote</span>
+                                        </div>
+                                    </div>
+                
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[10px]">Doula & Postpartum Services</h3>
+                                    <p class="text-[#6B6C6B] leading-[21px] text-sm mt-[10px]">I offer specialised Doula & Postnatal Services to support moms throughout their journey.</p>
+                                    <p class="text-[#6B6C6B] leading-[18px] text-[12px] font-[600] mt-[20px]">Services: Birth Help, Home Birth & More</p>
+                                    <div class="text-center mt-[20px]">
+                                        <a href="" class="underline underline-offset-4 text-[#464A48] leading-[16px] text-[13px] font-[700]">Learn More</a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
             </div>

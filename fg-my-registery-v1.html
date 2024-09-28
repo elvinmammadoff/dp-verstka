@@ -9,425 +9,427 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
 
-        <!-- Error accordion -->
-        <div class="flex items-center justify-between gap-[16px] rounded-lg border-[2px] border-[#F89090] py-[13px] px-[32px]">
-            <div class="flex items-center gap-[16px]">
-                <img src="img/info-circle-error.svg" alt="info" class="w-[24px] h-[24px]" />
-                <span class="mt-[2px] text-[#F23030] text-base font-[500] leading-[24px]">One of your Products needs attention</span>
-            </div>
-            <button>
-                <img src="img/arrow-down-red.svg" alt="arrow-down-red" class="w-[24px] h-[24px]" />
-            </button>
-        </div>
-
-        <!-- Open accordion -->
-        <div class="rounded-lg border-[2px] border-[#D8C3B4] py-[24px] px-[32px]">
-
-            <!-- Header accordion -->
-            <div class="flex items-start justify-between gap-[16px]">
-                <div class="flex flex-col gap-y-[7px]">
-                    <div class="flex items-center gap-[16px]">
-                        <img src="img/info-circle.svg" alt="info" class="w-[24px] h-[24px]" />
-                        <span class="mt-[2px] text-[#464A48] text-base font-[500] leading-[24px]">One of your Products needs attention</span>
-                    </div>
-                    <p class="text-[#464A48] text-sm font-[400] leading-[21px]">Your product got gifted, but unfortunately it is now out of stock. You can decide if you want to wait for it or get an alternative.</p>
+            <!-- Error accordion -->
+            <div class="flex items-center justify-between gap-[16px] rounded-lg border-[2px] border-[#F89090] py-[13px] px-[32px]">
+                <div class="flex items-center gap-[16px]">
+                    <img src="img/info-circle-error.svg" alt="info" class="w-[24px] h-[24px]" />
+                    <span class="mt-[2px] text-[#F23030] text-base font-[500] leading-[24px]">One of your Products needs attention</span>
                 </div>
                 <button>
-                    <img src="img/fg-arrow-up.svg" alt="arrow-down-red" class="w-[24px] h-[24px]" />
+                    <img src="img/arrow-down-red.svg" alt="arrow-down-red" class="w-[24px] h-[24px]" />
                 </button>
             </div>
 
-            <!-- Body accordion -->
-            <div class="flex items-center mt-[36px]">
+            <!-- Open accordion -->
+            <div class="rounded-lg border-[2px] border-[#D8C3B4] py-[24px] px-[32px]">
 
-                <div class="flex flex-col gap-y-[12px]">
-                    
-                    <h3 class="text-[#464A48] text-base text-[22px] font-[600]">Your original Product:</h3>
-
-                    <!-- Guest card -->
-                    <div class="relative overflow-hidden">
-    
-                        <!-- Provider add ranking -->
-                        <div class="absolute top-[0] left-[0] z-[10] w-[45px] h-[45px] flex items-center justify-center font-[600] text-white leading-[25px] text-[22px] bg-[#6A976E] rounded-tl-[9px] rounded-br-[9px]">
-                            <span class="text-[14px] mb-[-4px] mr-[1px]">#</span>1
+                <!-- Header accordion -->
+                <div class="flex items-start justify-between gap-[16px]">
+                    <div class="flex flex-col gap-y-[7px]">
+                        <div class="flex items-center gap-[16px]">
+                            <img src="img/info-circle.svg" alt="info" class="w-[24px] h-[24px]" />
+                            <span class="mt-[2px] text-[#464A48] text-base font-[500] leading-[24px]">One of your Products needs attention</span>
                         </div>
+                        <p class="text-[#464A48] text-sm font-[400] leading-[21px]">Your product got gifted, but unfortunately it is now out of stock. You can decide if you want to wait for it or get an alternative.</p>
+                    </div>
+                    <button>
+                        <img src="img/fg-arrow-up.svg" alt="arrow-down-red" class="w-[24px] h-[24px]" />
+                    </button>
+                </div>
 
-                        <div class="sm:w-[201px] gap-[26px] py-[10px] px-[9px] border-[2px] border-[#6A976E] rounded-[9px] bg-white overflow-hidden relative">
+                <!-- Body accordion -->
+                <div class="flex items-center mt-[36px]">
+
+                    <div class="flex flex-col gap-y-[12px]">
+                        
+                        <h3 class="text-[#464A48] text-base text-[22px] font-[600]">Your original Product:</h3>
+
+                        <!-- Guest card -->
+                        <div class="relative overflow-hidden">
         
-                            <!-- Popup overlay -->
-                            <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
+                            <!-- Provider add ranking -->
+                            <div class="absolute top-[0] left-[0] z-[10] w-[45px] h-[45px] flex items-center justify-center font-[600] text-white leading-[25px] text-[22px] bg-[#6A976E] rounded-tl-[9px] rounded-br-[9px]">
+                                <span class="text-[14px] mb-[-4px] mr-[1px]">#</span>1
+                            </div>
+
+                            <div class="sm:w-[201px] gap-[26px] py-[10px] px-[9px] border-[2px] border-[#6A976E] rounded-[9px] bg-white overflow-hidden relative">
             
-                            <!-- Popup card -->
-                            <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[11px]">
-                                <div class="bg-white rounded-[10px] p-[13px]">
-                                    <div class="flex items-center justify-center gap-[8px] p-[6px]">
-                                        <img src="img/fg-package.svg" alt="" class="w-[13px] h-[13px]" />
-                                        <span class="font-[500] text-[11px] leading-[14px] text-[#F23030]">Out of Stock</span>
-                                    </div>
-                                    <p class="text-[#323735] text-[14px] leading-[17px] font-[600] text-center mt-[5px]">Someone tried to buy this for you, but it’s out of stock</p>
-                                </div>
-                            </div>
-        
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[174px] object-cover" />
-                            </div>
-        
-                            <!-- Provider add card body -->
-                            <div class="mt-[35px]">
-        
-                                <span class="text-[11px] leading-[18px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[16px] text-[13px] font-[600] mt-[8px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[14px] text-[12px] mt-[6px]">$199.99</span>
-        
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
-        
-                                <!-- Price progress -->
-                                <p class="text-[#6A976E] font-[500] text-[12px] leading-[14px]">Fully Funded 🎉</p>
-                            </div>
-        
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="w-[1px] h-[342px] bg-[#BCC2C0] ml-[87px] mr-[87px]"></div>
-
-                <div class="flex flex-col gap-y-[12px]">
-                    
-                    <h3 class="text-[#464A48] text-base text-[22px] font-[600]">Here are 3 alternatives we found for you:</h3>
-
-                    <div class="flex items-start gap-[26px] grid grid-cols-1 sm:grid-cols-6">
-    
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[10px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[13px]">
-    
-                                <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[8px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[8px]">$200</span>
-        
-                                <button class="py-[11px] px-[16px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px] w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
-                                    <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
-                                </button>
-                            </div>
-    
-                        </div>
-    
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[13px]">
-    
-                                <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[6px]">$200</span>
-        
-                                <button class="py-[11px] px-[15px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px]">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
-                                    <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
-                                </button>
-                            </div>
-    
-                        </div>
-    
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[13px]">
-
-                                <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[6px]">$200</span>
-        
-                                <button class="py-[11px] px-[15px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px]">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
-                                    <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
-                                </button>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- Footer accordion -->
-            <div class="flex items-center justify-between gap-[12px] mt-[48px]">
-                <div class="flex flex-col gap-y-[8px]">
-                    <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Don’t want an alternative?</h3>
-                    <p class="text-[#464A48] text-[14px] font-[400] leading-[21px]">We can automatically notify you when your original product is back in stock.</p>
-                </div>
-
-                <button class="py-[7px] px-[17px] border-[1px] border-[#323735] rounded-[6px] bg-white">
-                    <span class="text-[#464A48] text-[12px] leading-[17px] font-[600]">E-mail when Available</span>
-                </button>
-            </div>
-        </div>
-
-        <div class="bg-[#F9F3EF] w-full rounded-[16px] py-[32px] px-[29px]">
-            <div class="flex items-center justify-between gap-[16px]">
-
-                <!-- Subject -->
-                <div class="space-y-[16px]">
-                    <h3 class="text-2xl font-[700] leading-[33px] text-[#323735]">My Top 10 Items</h3>
-                    <p class="text-sm leading-[21px] text-[#6B6C6B]">You have ranked 10 items which your friends & family will see</p>
-                </div>
-
-                <button class="py-[10px] px-[16px] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-transparent flex items-center gap-[11px]">
-                    <img src="img/fg-pencil.svg" alt="pencil" class="w-[24px] h-[24px]" />
-                    <span class="text-[#323735] text-[14px] leading-[17px] font-[600]">Change Ranking</span>
-                </button>
-            </div>
-        </div>
-  
-
-        <!-- All items -->
-        <div class="flex flex-col gap-y-[35px]">
-            <dvi class="flex items-center justify-between">
-                <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All items</h3>
-                <button class="flex items-center justify-center mt-[24px] gap-x-[11px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[12px] px-[25px] rounded-lg">
-                    <img src="img/sp-add-circle-white.svg" alt="add-circle" class="w-[22px] h-[22px]" />
-                    <span class="leading-[17px] font-[600] text-[14px]">Add New Gifts</span>
-                </button>
-            </dvi>
-            <div class="flex gap-x-[51px] gap-y-[24px]">
-                <div class="w-[233px]">
-                    filter
-                </div>
-                <div class="max-w-[816px] w-full">
-                    <div class="flex items-center justify-between gap-[20px]">
-                        <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
-                        <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">9 items</span>
-                    </div>
-
-                    <div class="gap-x-[26px] gap-y-[24px] mt-[19px] flex items-start grid grid-cols-1 sm:grid-cols-6">
-
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$30/month</span>
-                                <span class="block text-[#6B6C6B] font-[500] text-[12px] leading-[23px] mt-[4px]">12 months wished for</span>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
-                                        <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[14px] leading-[23px]">Months</span></span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
+                                <!-- Popup overlay -->
+                                <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
+                
+                                <!-- Popup card -->
+                                <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[11px]">
+                                    <div class="bg-white rounded-[10px] p-[13px]">
+                                        <div class="flex items-center justify-center gap-[8px] p-[6px]">
+                                            <img src="img/fg-package.svg" alt="" class="w-[13px] h-[13px]" />
+                                            <span class="font-[500] text-[11px] leading-[14px] text-[#F23030]">Out of Stock</span>
+                                        </div>
+                                        <p class="text-[#323735] text-[14px] leading-[17px] font-[600] text-center mt-[5px]">Someone tried to buy this for you, but it’s out of stock</p>
                                     </div>
                                 </div>
-                            </div>
-    
-                        </div>
-
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Popup overlay -->
-                            <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
             
-                            <!-- Popup card -->
-                            <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
-                                <div class="bg-white rounded-[10px] p-[16px]">
-                                    <div class="flex items-center justify-center gap-[8px] p-[6px]">
-                                        <img src="img/fg-package.svg" alt="" class="w-[16px] h-[16px]" />
-                                        <span class="font-[500] text-[14px] leading-[18px] text-[#F23030]">Out of Stock</span>
-                                    </div>
-                                    <p class="text-[#323735] text-[18px] leading-[22px] font-[600] text-center mt-[5px]">Someone tried to buy this for you, but it’s out of stock</p>
-                                    <button class="py-[9px] px-[24px] text-[#323735] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-white text-sm leading-[21px] font-[600] text-center w-full">Find an Alternative</button>
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[174px] object-cover" />
                                 </div>
-                            </div>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[46px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$199.99</span>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
-                                        <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">$200/$200</span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$30/month</span>
-                                <span class="block text-[#6B6C6B] font-[500] text-[12px] leading-[23px] mt-[4px]">1 Item wished for</span>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Gifted</span>
-                                        <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">0/1</span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-full h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-[19px]"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-
-                        <!-- Guest card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Popup overlay -->
-                            <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
             
-                            <!-- Popup card -->
-                            <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
-                                <div class="bg-white rounded-[10px] p-[16px]">
-                                    <div class="flex items-center justify-center gap-[8px] p-[6px]">
-                                        <img src="img/fg-time.svg" alt="" class="w-[16px] h-[16px]" />
-                                        <span class="font-[500] text-[14px] leading-[18px] text-[#3399FF]">Waiting for Stock</span>
-                                    </div>
-                                    <p class="text-[#323735] text-[18px] leading-[22px] font-[600] text-center mt-[5px]">This item is out of stock, but we are monitoring it!</p>
-                                    <button class="py-[9px] px-[24px] text-[#323735] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-white text-sm leading-[21px] font-[600] text-center w-full">Find an Alternative</button>
+                                <!-- Provider add card body -->
+                                <div class="mt-[35px]">
+            
+                                    <span class="text-[11px] leading-[18px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[16px] text-[13px] font-[600] mt-[8px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[14px] text-[12px] mt-[6px]">$199.99</span>
+            
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
+            
+                                    <!-- Price progress -->
+                                    <p class="text-[#6A976E] font-[500] text-[12px] leading-[14px]">Fully Funded 🎉</p>
                                 </div>
+            
                             </div>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[46px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$199.99</span>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
-                                        <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">$200/$200</span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                        <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
+
                         </div>
 
                     </div>
+
+                    <div class="w-[1px] h-[342px] bg-[#BCC2C0] ml-[87px] mr-[87px]"></div>
+
+                    <div class="flex flex-col gap-y-[12px]">
+                        
+                        <h3 class="text-[#464A48] text-base text-[22px] font-[600]">Here are 3 alternatives we found for you:</h3>
+
+                        <div class="flex items-start gap-[26px] grid grid-cols-1 sm:grid-cols-6">
+        
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[10px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[13px]">
+        
+                                    <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[8px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[8px]">$200</span>
+            
+                                    <button class="py-[11px] px-[16px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px] w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
+                                        <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
+                                    </button>
+                                </div>
+        
+                            </div>
+        
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[13px]">
+        
+                                    <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[6px]">$200</span>
+            
+                                    <button class="py-[11px] px-[15px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px]">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
+                                        <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
+                                    </button>
+                                </div>
+        
+                            </div>
+        
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[168px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[13px]">
+
+                                    <span class="text-[12px] leading-[18px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[16px] text-[14px] mt-[6px]">$200</span>
+            
+                                    <button class="py-[11px] px-[15px] border-[1px] border-[#323735] rounded-[5px] mt-[13px] bg-transparent flex items-center gap-[10px]">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[20px] h-[20px]" />
+                                        <span class="text-[#323735] text-[15px] leading-[19px] font-[600]">Choose instead</span>
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Footer accordion -->
+                <div class="flex items-center justify-between gap-[12px] mt-[48px]">
+                    <div class="flex flex-col gap-y-[8px]">
+                        <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Don’t want an alternative?</h3>
+                        <p class="text-[#464A48] text-[14px] font-[400] leading-[21px]">We can automatically notify you when your original product is back in stock.</p>
+                    </div>
+
+                    <button class="py-[7px] px-[17px] border-[1px] border-[#323735] rounded-[6px] bg-white">
+                        <span class="text-[#464A48] text-[12px] leading-[17px] font-[600]">E-mail when Available</span>
+                    </button>
                 </div>
             </div>
-        </div>
 
+            <div class="bg-[#F9F3EF] w-full rounded-[16px] py-[32px] px-[29px]">
+                <div class="flex items-center justify-between gap-[16px]">
+
+                    <!-- Subject -->
+                    <div class="space-y-[16px]">
+                        <h3 class="text-2xl font-[700] leading-[33px] text-[#323735]">My Top 10 Items</h3>
+                        <p class="text-sm leading-[21px] text-[#6B6C6B]">You have ranked 10 items which your friends & family will see</p>
+                    </div>
+
+                    <button class="py-[10px] px-[16px] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-transparent flex items-center gap-[11px]">
+                        <img src="img/fg-pencil.svg" alt="pencil" class="w-[24px] h-[24px]" />
+                        <span class="text-[#323735] text-[14px] leading-[17px] font-[600]">Change Ranking</span>
+                    </button>
+                </div>
+            </div>
+    
+
+            <!-- All items -->
+            <div class="flex flex-col gap-y-[35px]">
+                <dvi class="flex items-center justify-between">
+                    <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All items</h3>
+                    <button class="flex items-center justify-center mt-[24px] gap-x-[11px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[12px] px-[25px] rounded-lg">
+                        <img src="img/sp-add-circle-white.svg" alt="add-circle" class="w-[22px] h-[22px]" />
+                        <span class="leading-[17px] font-[600] text-[14px]">Add New Gifts</span>
+                    </button>
+                </dvi>
+                <div class="flex gap-x-[51px] gap-y-[24px]">
+                    <div class="w-[233px]">
+                        filter
+                    </div>
+                    <div class="max-w-[816px] w-full">
+                        <div class="flex items-center justify-between gap-[20px]">
+                            <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
+                            <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">9 items</span>
+                        </div>
+
+                        <div class="gap-x-[26px] gap-y-[24px] mt-[19px] flex items-start grid grid-cols-1 sm:grid-cols-6">
+
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[15px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$30/month</span>
+                                    <span class="block text-[#6B6C6B] font-[500] text-[12px] leading-[23px] mt-[4px]">12 months wished for</span>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
+                                            <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[14px] leading-[23px]">Months</span></span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Popup overlay -->
+                                <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
+                
+                                <!-- Popup card -->
+                                <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
+                                    <div class="bg-white rounded-[10px] p-[16px]">
+                                        <div class="flex items-center justify-center gap-[8px] p-[6px]">
+                                            <img src="img/fg-package.svg" alt="" class="w-[16px] h-[16px]" />
+                                            <span class="font-[500] text-[14px] leading-[18px] text-[#F23030]">Out of Stock</span>
+                                        </div>
+                                        <p class="text-[#323735] text-[18px] leading-[22px] font-[600] text-center mt-[5px]">Someone tried to buy this for you, but it’s out of stock</p>
+                                        <button class="py-[9px] px-[24px] text-[#323735] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-white text-sm leading-[21px] font-[600] text-center w-full">Find an Alternative</button>
+                                    </div>
+                                </div>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[46px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$199.99</span>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
+                                            <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">$200/$200</span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[15px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$30/month</span>
+                                    <span class="block text-[#6B6C6B] font-[500] text-[12px] leading-[23px] mt-[4px]">1 Item wished for</span>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Gifted</span>
+                                            <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">0/1</span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-full h-[16px] border-x-[1px] border-white bg-[#F1F1F1] rounded-[19px]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[15px] px-[12px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Popup overlay -->
+                                <div class="h-full w-full opacity-30 bg-[#6B6C6B] absolute z-20 top-0 left-0"></div>
+                
+                                <!-- Popup card -->
+                                <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
+                                    <div class="bg-white rounded-[10px] p-[16px]">
+                                        <div class="flex items-center justify-center gap-[8px] p-[6px]">
+                                            <img src="img/fg-time.svg" alt="" class="w-[16px] h-[16px]" />
+                                            <span class="font-[500] text-[14px] leading-[18px] text-[#3399FF]">Waiting for Stock</span>
+                                        </div>
+                                        <p class="text-[#323735] text-[18px] leading-[22px] font-[600] text-center mt-[5px]">This item is out of stock, but we are monitoring it!</p>
+                                        <button class="py-[9px] px-[24px] text-[#323735] border-[1px] border-[#323735] rounded-[5px] mt-[12px] bg-white text-sm leading-[21px] font-[600] text-center w-full">Find an Alternative</button>
+                                    </div>
+                                </div>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[220px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[46px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[20px] text-[16px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[18px] text-[13px] mt-[6px]">$199.99</span>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[16px] mb-[16px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[23px] text-[14px]">Group Gifting</span>
+                                            <span class="text-[#6A976E] leading-[32px] text-[16px] font-[500]">$200/$200</span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                            <div class="w-[calc(100%/4)] h-[16px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

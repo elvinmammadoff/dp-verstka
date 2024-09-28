@@ -9,349 +9,71 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
-        
-        <!-- Guest profile -->
-        <div class="relative">
-
-            <!-- Guest avatar -->
-            <img src="img/gw-cover.png" alt="guest-cover" />
-            <div class="absolute top-[-55px] left-[50%] -translate-x-[50%] flex flex-col items-center gap-y-[12px]">
-                <div class="w-[130px] h-[130px] rounded-full overflow-hidden">
-                    <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
-                </div>
-                <h3 class="font-lora text-6xl font-[700] leading-[68px] text-[#323735]"><span class="text-[#6A976E]">Eve’s</span> Registry</h3>
-                <p class="font-[600] text-2xl text-[#323735] leading-[33px]">🎉 10 Days until Eve’s Due date!</p>
-            </div>
-
-        </div>
-
-        <!-- Guest features -->
-        <div class="grid grid-cols-1 gap-[25px] sm:grid-cols-6">
-            <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
-                <img src="img/gw-love.svg" alt="love" class="w-[60px] h-[60px]" />
-                <div class="flex flex-col gap-y-[6px]">
-                    <h3 class="font-[700] text-sm text-white leading-[21px]">Affordable Gifts with Group Gifting</h3>
-                    <p class="text-[12px] text-white leading-[17px]">At Dopple we allow group gifting for all items and services above 100$!</p>
-                </div>
-            </div>
-            <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
-                <img src="img/gw-support.svg" alt="support" class="w-[60px] h-[60px]" />
-                <div class="flex flex-col gap-y-[6px]">
-                    <h3 class="font-[700] text-sm text-white leading-[21px]">Meaningful Service Gifts</h3>
-                    <p class="text-[12px] text-white leading-[17px]">Contribute to Service gifts to offer long-term support for parents.</p>
-                </div>
-            </div>
-            <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
-                <img src="img/gw-star.svg" alt="star" class="w-[60px] h-[60px]" />
-                <div class="flex flex-col gap-y-[6px]">
-                    <h3 class="font-[700] text-sm text-white leading-[21px]">Help by Collecting Stars</h3>
-                    <p class="text-[12px] text-white leading-[17px]">Every time you purchase a star, you help NAME to earn Dopple store credit! </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-[#F9F3EF] w-full rounded-[16px] py-[40px] px-[32px]">
-            <div class="space-y-[30px]">
-
-                <!-- Subject -->
-                <div class="space-y-[16px]">
-                    <h3 class="text-2xl font-[700] leading-[33px] text-[#323735]">Eve’s Top 10 Items</h3>
-                    <p class="text-sm mt-[6px] leading-[21px] text-[#6B6C6B]">Eve has ranked her 10 must-wished for items. Be the first one to buy them!</p>
-                </div>
-
-                <!-- Guest items list -->
-                <div class="grid grid-cols-1 sm:grid-cols-12">
-
-                    <!-- Guest card -->
-                    <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
-
-                        <!-- Provider add ranking -->
-                        <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[31px] text-[27px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                            <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>1
-                        </div>
-
-                        <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
-                            
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
-                                <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
-    
-                                <div class="flex items-center justify-between gap-[10px] mt-[12px]">
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                                </div>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Group Gifting</span>
-                                        <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[12px] leading-[21px]">Months</span></span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="flex items-center gap-[9px] mt-[15px]">
-    
-                                    <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
-    
-                                    <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
-                                        <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Guest card -->
-                    <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
-
-                        <!-- Provider add ranking -->
-                        <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                            <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>2
-                        </div>
-
-                        <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
-
-                            <!-- Popup overlay -->
-                            <div class="h-full w-full opacity-20 bg-[#6A976E] absolute z-20 top-0 left-0"></div>
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
             
-                            <!-- Popup card -->
-                            <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
-                                <div class="bg-white rounded-[10px] p-[16px]">
-                                    <p class="text-[#323735] text-[18px] leading-[22px] font-[500] text-center">This item was already purchased. Be fast to not miss out! 🎉</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
-                                <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
-    
-                                <div class="flex items-center justify-between gap-[10px] mt-[12px]">
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                                </div>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Group Gifting</span>
-                                        <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[12px] leading-[21px]">Months</span></span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="flex items-center gap-[9px] mt-[15px]">
-    
-                                    <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
-    
-                                    <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
-                                        <span class="leading-[21px] font-[600] text-[15px]">Purchased</span>
-                                    </button>
-                                </div>
-                            </div>
+            <!-- Guest profile -->
+            <div class="relative">
 
-                        </div>
-
-
+                <!-- Guest avatar -->
+                <img src="img/gw-cover.png" alt="guest-cover" />
+                <div class="absolute top-[-55px] left-[50%] -translate-x-[50%] flex flex-col items-center gap-y-[12px]">
+                    <div class="w-[130px] h-[130px] rounded-full overflow-hidden">
+                        <img src="img/sp-avatar.png" alt="avatar" class="rounded-full w-full h-full object-cover" />     
                     </div>
+                    <h3 class="font-lora text-6xl font-[700] leading-[68px] text-[#323735]"><span class="text-[#6A976E]">Eve’s</span> Registry</h3>
+                    <p class="font-[600] text-2xl text-[#323735] leading-[33px]">🎉 10 Days until Eve’s Due date!</p>
+                </div>
 
-                    <!-- Guest card -->
-                    <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
+            </div>
 
-                        <!-- Provider add ranking -->
-                        <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                            <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>3
-                        </div>
-
-                        <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
-
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
-                                <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
-    
-                                <div class="flex items-center justify-between gap-[10px] mt-[12px]">
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                                </div>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Gifted</span>
-                                        <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">$50/$200</span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
-                                        <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
-                                        <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="flex items-center gap-[9px] mt-[15px]">
-    
-                                    <input type="text" name="gift-val" id="quantity-input" value="$50" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
-    
-                                    <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
-                                        <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-
+            <!-- Guest features -->
+            <div class="grid grid-cols-1 gap-[25px] sm:grid-cols-6">
+                <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
+                    <img src="img/gw-love.svg" alt="love" class="w-[60px] h-[60px]" />
+                    <div class="flex flex-col gap-y-[6px]">
+                        <h3 class="font-[700] text-sm text-white leading-[21px]">Affordable Gifts with Group Gifting</h3>
+                        <p class="text-[12px] text-white leading-[17px]">At Dopple we allow group gifting for all items and services above 100$!</p>
                     </div>
-
-                    <!-- Guest card -->
-                    <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
-
-                        <!-- Provider add ranking -->
-                        <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
-                            <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>4
-                        </div>
-
-                        <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
-
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[15px]">
-    
-                                <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
-                                <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
-                                <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
-                                <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
-    
-                                <div class="flex items-center justify-between gap-[10px] mt-[12px]">
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
-                                    <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
-                                </div>
-    
-                                <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
-    
-                                <!-- Price progress -->
-                                <div class="flex flex-col gap-y-[2px]">
-    
-                                    <div class="flex items-center justify-between gap-[10px]">
-                                        <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Gifted</span>
-                                        <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/1</span>
-                                    </div>
-    
-                                    <div class="flex w-full">
-                                        <div class="w-full h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-[19px]"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="flex items-center gap-[9px] mt-[15px]">
-    
-                                    <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
-    
-                                    <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
-                                        <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-
+                </div>
+                <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
+                    <img src="img/gw-support.svg" alt="support" class="w-[60px] h-[60px]" />
+                    <div class="flex flex-col gap-y-[6px]">
+                        <h3 class="font-[700] text-sm text-white leading-[21px]">Meaningful Service Gifts</h3>
+                        <p class="text-[12px] text-white leading-[17px]">Contribute to Service gifts to offer long-term support for parents.</p>
                     </div>
-
+                </div>
+                <div class="sm:col-span-2 rounded-lg py-[20px] px-[12px] flex items-center gap-[19px] bg-[#6A976E]">
+                    <img src="img/gw-star.svg" alt="star" class="w-[60px] h-[60px]" />
+                    <div class="flex flex-col gap-y-[6px]">
+                        <h3 class="font-[700] text-sm text-white leading-[21px]">Help by Collecting Stars</h3>
+                        <p class="text-[12px] text-white leading-[17px]">Every time you purchase a star, you help NAME to earn Dopple store credit! </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- All items -->
-        <div class="flex flex-col gap-y-[35px]">
-            <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All items</h3>
-            <div class="flex gap-x-[51px] gap-y-[24px]">
-                <div class="w-[233px]">
-                    filter
-                </div>
-                <div class="max-w-[816px] w-full">
-                    <div class="flex items-center justify-between gap-[20px]">
-                        <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
-                        <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">9 items</span>
+            <div class="bg-[#F9F3EF] w-full rounded-[16px] py-[40px] px-[32px]">
+                <div class="space-y-[30px]">
+
+                    <!-- Subject -->
+                    <div class="space-y-[16px]">
+                        <h3 class="text-2xl font-[700] leading-[33px] text-[#323735]">Eve’s Top 10 Items</h3>
+                        <p class="text-sm mt-[6px] leading-[21px] text-[#6B6C6B]">Eve has ranked her 10 must-wished for items. Be the first one to buy them!</p>
                     </div>
 
-                    <div class="gap-x-[26px] gap-y-[24px] mt-[19px] grid grid-cols-1 sm:grid-cols-6">
+                    <!-- Guest items list -->
+                    <div class="grid grid-cols-1 sm:grid-cols-12">
 
                         <!-- Guest card -->
-                        <div class="sm:col-span-2 relative overflow-hidden">
+                        <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
 
-                            <div class="py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
-                               
+                            <!-- Provider add ranking -->
+                            <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[31px] text-[27px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                                <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>1
+                            </div>
+
+                            <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
+                                
                                 <!-- Provider add card top -->
                                 <div class="rounded-[9px] overflow-hidden">
                                     <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
@@ -364,6 +86,11 @@
                                     <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
                                     <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
                                     <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
+        
+                                    <div class="flex items-center justify-between gap-[10px] mt-[12px]">
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                                    </div>
         
                                     <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
         
@@ -402,14 +129,289 @@
                                 </div>
 
                             </div>
-    
+
+                        </div>
+
+                        <!-- Guest card -->
+                        <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
+
+                            <!-- Provider add ranking -->
+                            <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                                <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>2
+                            </div>
+
+                            <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
+
+                                <!-- Popup overlay -->
+                                <div class="h-full w-full opacity-20 bg-[#6A976E] absolute z-20 top-0 left-0"></div>
+                
+                                <!-- Popup card -->
+                                <div class="h-full w-full absolute z-20 top-0 left-0 flex items-center justify-center p-[13px]">
+                                    <div class="bg-white rounded-[10px] p-[16px]">
+                                        <p class="text-[#323735] text-[18px] leading-[22px] font-[500] text-center">This item was already purchased. Be fast to not miss out! 🎉</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[15px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
+                                    <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
+        
+                                    <div class="flex items-center justify-between gap-[10px] mt-[12px]">
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                                    </div>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Group Gifting</span>
+                                            <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[12px] leading-[21px]">Months</span></span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="flex items-center gap-[9px] mt-[15px]">
+        
+                                        <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
+        
+                                        <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
+                                            <span class="leading-[21px] font-[600] text-[15px]">Purchased</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Guest card -->
+                        <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
+
+                            <!-- Provider add ranking -->
+                            <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                                <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>3
+                            </div>
+
+                            <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
+
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[15px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
+                                    <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
+        
+                                    <div class="flex items-center justify-between gap-[10px] mt-[12px]">
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                                    </div>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Gifted</span>
+                                            <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">$50/$200</span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
+                                            <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                            <div class="w-[calc(100%/4)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="flex items-center gap-[9px] mt-[15px]">
+        
+                                        <input type="text" name="gift-val" id="quantity-input" value="$50" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
+        
+                                        <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
+                                            <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Guest card -->
+                        <div class="sm:col-span-3 max-w-[240px] relative overflow-hidden">
+
+                            <!-- Provider add ranking -->
+                            <div class="absolute top-[0] left-[0] z-[10] w-[56px] h-[56px] flex items-center justify-center font-[600] text-white leading-[32px] text-[28px] bg-[#6A976E] rounded-tl-[8px] rounded-br-[8px]">
+                                <span class="text-[20px] mb-[-4px] mr-[1px] font-[500]">#</span>4
+                            </div>
+
+                            <div class="gap-[26px] py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
+
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[15px]">
+        
+                                    <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                    <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                    <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
+                                    <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
+        
+                                    <div class="flex items-center justify-between gap-[10px] mt-[12px]">
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">Total Requested:</span>
+                                        <span class="text-[#464A48] leading-[22px] text-[14px] font-[600]">$800</span>
+                                    </div>
+        
+                                    <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
+        
+                                    <!-- Price progress -->
+                                    <div class="flex flex-col gap-y-[2px]">
+        
+                                        <div class="flex items-center justify-between gap-[10px]">
+                                            <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Gifted</span>
+                                            <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/1</span>
+                                        </div>
+        
+                                        <div class="flex w-full">
+                                            <div class="w-full h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-[19px]"></div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="flex items-center gap-[9px] mt-[15px]">
+        
+                                        <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
+        
+                                        <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
+                                            <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- All items -->
+            <div class="flex flex-col gap-y-[35px]">
+                <h3 class="text-2xl leading-[33px] font-[700] text-[#323735]">All items</h3>
+                <div class="flex gap-x-[51px] gap-y-[24px]">
+                    <div class="w-[233px]">
+                        filter
+                    </div>
+                    <div class="max-w-[816px] w-full">
+                        <div class="flex items-center justify-between gap-[20px]">
+                            <h3 class="text-[18px] font-[600] leading-[33px] text-[#323735]">Category name</h3>
+                            <span class="text-[18px] font-[600] leading-[33px] text-[#323735]">9 items</span>
+                        </div>
+
+                        <div class="gap-x-[26px] gap-y-[24px] mt-[19px] grid grid-cols-1 sm:grid-cols-6">
+
+                            <!-- Guest card -->
+                            <div class="sm:col-span-2 relative overflow-hidden">
+
+                                <div class="py-[11px] px-[11px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white overflow-hidden relative">
+                                
+                                    <!-- Provider add card top -->
+                                    <div class="rounded-[9px] overflow-hidden">
+                                        <img src="img/sp-img.png" alt="sp-img" class="w-full rounded-[9px] min-h-[207px] object-cover" />
+                                    </div>
+            
+                                    <!-- Provider add card body -->
+                                    <div class="mt-[15px]">
+            
+                                        <span class="text-[13px] leading-[22px] text-[#6B6C6B]">Brand</span>
+                                        <h3 class="text-[#323735] leading-[19px] text-[15px] font-[600] mt-[2px]">Gift Name, Characteristic + Size</h3>
+                                        <span class="block text-[#464A48] leading-[17px] text-[14px] mt-[4px]">$30/month</span>
+                                        <span class="text-[#6B6C6B] font-[500] text-[11px] leading-[22px] mt-[4px]">12 months wished for</span>
+            
+                                        <div class="w-full h-[1px] bg-[#F1F1F1] mt-[15px] mb-[15px]"></div>
+            
+                                        <!-- Price progress -->
+                                        <div class="flex flex-col gap-y-[2px]">
+            
+                                            <div class="flex items-center justify-between gap-[10px]">
+                                                <span class="text-[#6B6C6B] leading-[21px] text-[13px]">Group Gifting</span>
+                                                <span class="text-[#6A976E] leading-[30px] text-[14px] font-[500]">0/12 <span class="text-[#6B6C6B] font-[400] text-[12px] leading-[21px]">Months</span></span>
+                                            </div>
+            
+                                            <div class="flex w-full">
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-l-[19px]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1]"></div>
+                                                <div class="w-[calc(100%/12)] h-[15px] border-x-[1px] border-white bg-[#F1F1F1] rounded-r-[19px]"></div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="flex items-center gap-[9px] mt-[15px]">
+            
+                                            <input type="text" name="gift-val" id="quantity-input" value="1" class="bg-white border border-[#BCC2C0] text-center text-[#323735] font-[600] leading-[19px] text-[15px] focus:border-[#BCC2C0] py-[11px] px-[5px] w-[43px] rounded-[6px]" />
+            
+                                            <button class="w-full flex items-center justify-center bg-transparent text-[#464A48] hover:bg-transparent hover:text-[#464A48] px-[41px] py-[10px] border border-[#464A48] hover:border-[#464A48] rounded-lg">
+                                                <span class="leading-[21px] font-[600] text-[15px]">Add to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+        
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

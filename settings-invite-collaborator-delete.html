@@ -9,62 +9,64 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
- 
-        <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[629px] overflow-hidden py-[40px] px-[60px]">
-            
-            <!-- Close icon -->
-            <button class="absolute top-[25px] right-[27px]">
-                <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
-            </button>
-
-            <!-- Modal header -->
-            <div class="text-center px-[60px]">
-                <h3 class="font-[600] text-[#323735] text-[21px] leading-[25px]">Are you sure you want to delete Name from your registry?</h3>
-            </div>
-
-            <!-- Modal content -->
-            <div class="flex items-center gap-[31px] justify-between border-[1px] border-[#BCC2C0] rounded-[10px] py-[20px] px-[20.5px] mt-[24px] flex-wrap">
-                                 
-                <div class="flex items-center gap-[24px]">
-
-                    <!-- Avatar -->
-                    <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
-                        <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
-                    </div>
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
     
-                    <div class="flex flex-col items-center gap-y-[2px]">
-                        <h3 class="font-[600] text-lg leading-[25px] text-[#323735]">Sara</h3>
-                        <span class="font-[400] text-sm leading-[21px] text-[#6B6C6B]">sara@gmail.com</span>
+            <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[629px] overflow-hidden py-[40px] px-[60px]">
+                
+                <!-- Close icon -->
+                <button class="absolute top-[25px] right-[27px]">
+                    <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
+                </button>
+
+                <!-- Modal header -->
+                <div class="text-center px-[60px]">
+                    <h3 class="font-[600] text-[#323735] text-[21px] leading-[25px]">Are you sure you want to delete Name from your registry?</h3>
+                </div>
+
+                <!-- Modal content -->
+                <div class="flex items-center gap-[31px] justify-between border-[1px] border-[#BCC2C0] rounded-[10px] py-[20px] px-[20.5px] mt-[24px] flex-wrap">
+                                    
+                    <div class="flex items-center gap-[24px]">
+
+                        <!-- Avatar -->
+                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
+                            <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                        </div>
+        
+                        <div class="flex flex-col items-center gap-y-[2px]">
+                            <h3 class="font-[600] text-lg leading-[25px] text-[#323735]">Sara</h3>
+                            <span class="font-[400] text-sm leading-[21px] text-[#6B6C6B]">sara@gmail.com</span>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-y-[4px]">
+
+                        <span class="text-[#464A48] text-[12px] font-[600] leading-[18px]">Status</span>
+                        <div class="bg-[#FFE5B2] flex items-center justify-center gap-[8px] py-[7px] px-[12px] rounded h-[32px]">
+                            <span class="font-[500] text-[12px] leading-[18px] text-[#323735]">Awaiting Confirmation</span>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="flex flex-col gap-y-[4px]">
+                <!-- Modal action button -->
+                <div class="flex items-center justify-center gap-x-[32px] mt-[24px]">
+                    <button class="flex items-center justify-center gap-[11px] bg-white text-[#464A48] hover:bg-white hover:text-[#464A48] border-[1px] border-[#464A48] py-[11px] px-[12px] rounded-lg w-full sm:w-[180px]">
+                        <img src="img/close.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                        <span class="leading-[22px] font-[600] text-base">No</span>
+                    </button>
 
-                    <span class="text-[#464A48] text-[12px] font-[600] leading-[18px]">Status</span>
-                    <div class="bg-[#FFE5B2] flex items-center justify-center gap-[8px] py-[7px] px-[12px] rounded h-[32px]">
-                        <span class="font-[500] text-[12px] leading-[18px] text-[#323735]">Awaiting Confirmation</span>
-                    </div>
+                    <button class="flex items-center justify-center gap-[11px] bg-[#323735] text-white hover:bg-[#323735] hover:text-white py-[11px] px-[12px] rounded-lg w-full w-max">
+                        <img src="img/check-cw-24.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                        <span class="leading-[22px] font-[600] text-base">Yes, Remove Access</span>
+                    </button>
                 </div>
 
-            </div>
-
-            <!-- Modal action button -->
-            <div class="flex items-center justify-center gap-x-[32px] mt-[24px]">
-                <button class="flex items-center justify-center gap-[11px] bg-white text-[#464A48] hover:bg-white hover:text-[#464A48] border-[1px] border-[#464A48] py-[11px] px-[12px] rounded-lg w-full sm:w-[180px]">
-                    <img src="img/close.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                    <span class="leading-[22px] font-[600] text-base">No</span>
-                </button>
-
-                <button class="flex items-center justify-center gap-[11px] bg-[#323735] text-white hover:bg-[#323735] hover:text-white py-[11px] px-[12px] rounded-lg w-full w-max">
-                    <img src="img/check-cw-24.svg" alt="add-circle" class="w-[24px] h-[24px]" />
-                    <span class="leading-[22px] font-[600] text-base">Yes, Remove Access</span>
-                </button>
             </div>
 
         </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

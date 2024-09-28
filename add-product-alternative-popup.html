@@ -9,177 +9,179 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
- 
-        <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden pt-[60px] pb-[44px] px-[60px]">
+    <div class="px-[16px]">
+        <div class="mx-auto flex flex-col gap-y-[30px] py-[30px] max-w-[1100px]">
+    
+            <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1010px] overflow-hidden pt-[60px] pb-[44px] px-[60px]">
+                
+                <!-- Close icon -->
+                <button class="absolute top-[25px] right-[27px]">
+                    <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
+                </button>
+
+                <!-- Modal header -->
+                <div class="text-center px-[150px]">
+                    <h3 class="font-lora font-[700] text-[#323735] text-[36px] leading-[43px]">Your gift is <span class="text-[#6A976E]">out of stock 😢</span></h3>
+                    <p class="mt-[16px] font-[300] text-[#464A48] text-[16px] leading-[24px]">You can decide if you want to wait for it or get an alternative product.</p>
+                </div>
+
+                <!-- Modal content -->
+                <div class="max-w-[560px] mx-auto mt-[24px] flex flex-col gap-y-[24px] p-[12px] pb-0">
+
+                    <!-- Header -->
+                    <div class="flex flex-col gap-y-[10px]">
+                        <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Your original Oriduct:</h3>
+                        <div class="flex items-center justify-between gap-[30px] py-[7.5px] px-[20px] border-[1px] border-[#BCC2C0] rounded-[6px]">
+                            <img src="img/sp-img.png" alt="product" class="w-[85px] h-[85px]" />
+                            
+                            <div class="flex flex-col gap-y-[6px] max-w-[189px]">
+                                <span class="text-[12px] leading-[14px] text-[#6B6C6B] font-normal">Brand</span>
+                                <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600]">Gift Name, Characteristic + Size</h3>
+                                <span class="block text-[#464A48] leading-[14px] text-[14px] font-[500]">$199.99</span>
+                            </div>
+
+                            <div class="flex flex-col items-end gap-y-[20px] max-w-[189px]">
+
+                                <div class="flex items-center gap-[6px]">
+                                    <img src="img/sp-heart.svg" alt="heart" class="w-[9px] h-[9px]" />
+                                    <span class="block text-[#464A48] leading-[13px] text-[12px] font-[500]">1 Item wished for</span>
+                                </div>
+        
+                                <!-- Price progress -->
+                                <div class="flex flex-col gap-y-[2px] w-[171px]">
+
+                                    <div class="flex items-center justify-between gap-[10px]">
+                                        <span class="text-[#6B6C6B] leading-[17px] text-[10px] font-[500]">Group Gifting</span>
+                                        <span class="text-[#6A976E] leading-[24px] text-[12px] font-[600]">$200/$200</span>
+                                    </div>
+
+                                    <div class="flex w-full">
+                                        <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
+                                        <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                        <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E]"></div>
+                                        <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col gap-y-[10px]">
+                        <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Your original Product:</h3>
+
+                        <div class="flex items-start gap-[26px] grid grid-cols-1 sm:grid-cols-6">
+        
+                            <!-- card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[10px]">
+        
+                                    <div class="flex flex-col gap-y-[6px]">
+                                        <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
+                                        <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
+                                        <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                    </div>
             
-            <!-- Close icon -->
-            <button class="absolute top-[25px] right-[27px]">
-                <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
-            </button>
-
-            <!-- Modal header -->
-            <div class="text-center px-[150px]">
-                <h3 class="font-lora font-[700] text-[#323735] text-[36px] leading-[43px]">Your gift is <span class="text-[#6A976E]">out of stock 😢</span></h3>
-                <p class="mt-[16px] font-[300] text-[#464A48] text-[16px] leading-[24px]">You can decide if you want to wait for it or get an alternative product.</p>
-            </div>
-
-            <!-- Modal content -->
-            <div class="max-w-[560px] mx-auto mt-[24px] flex flex-col gap-y-[24px] p-[12px] pb-0">
-
-                <!-- Header -->
-                <div class="flex flex-col gap-y-[10px]">
-                    <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Your original Oriduct:</h3>
-                    <div class="flex items-center justify-between gap-[30px] py-[7.5px] px-[20px] border-[1px] border-[#BCC2C0] rounded-[6px]">
-                        <img src="img/sp-img.png" alt="product" class="w-[85px] h-[85px]" />
-                        
-                        <div class="flex flex-col gap-y-[6px] max-w-[189px]">
-                            <span class="text-[12px] leading-[14px] text-[#6B6C6B] font-normal">Brand</span>
-                            <h3 class="text-[#323735] leading-[18px] text-[14px] font-[600]">Gift Name, Characteristic + Size</h3>
-                            <span class="block text-[#464A48] leading-[14px] text-[14px] font-[500]">$199.99</span>
-                        </div>
-
-                        <div class="flex flex-col items-end gap-y-[20px] max-w-[189px]">
-
-                            <div class="flex items-center gap-[6px]">
-                                <img src="img/sp-heart.svg" alt="heart" class="w-[9px] h-[9px]" />
-                                <span class="block text-[#464A48] leading-[13px] text-[12px] font-[500]">1 Item wished for</span>
-                            </div>
-    
-                            <!-- Price progress -->
-                            <div class="flex flex-col gap-y-[2px] w-[171px]">
-
-                                <div class="flex items-center justify-between gap-[10px]">
-                                    <span class="text-[#6B6C6B] leading-[17px] text-[10px] font-[500]">Group Gifting</span>
-                                    <span class="text-[#6A976E] leading-[24px] text-[12px] font-[600]">$200/$200</span>
-                                </div>
-
-                                <div class="flex w-full">
-                                    <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E] rounded-l-[19px]"></div>
-                                    <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                    <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E]"></div>
-                                    <div class="w-[calc(100%/4)] h-[12px] border-x-[1px] border-white bg-[#6A976E] rounded-r-[19px]"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Body -->
-                <div class="flex flex-col gap-y-[10px]">
-                    <h3 class="text-[#464A48] text-base font-[600] leading-[22px]">Your original Product:</h3>
-
-                    <div class="flex items-start gap-[26px] grid grid-cols-1 sm:grid-cols-6">
-    
-                        <!-- card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[10px]">
-    
-                                <div class="flex flex-col gap-y-[6px]">
-                                    <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
-                                    <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
-                                    <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                    <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
+                                        <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
+                                    </button>
                                 </div>
         
-                                <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
-                                    <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
-                                </button>
                             </div>
-    
-                        </div>
-    
-                        <!-- card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+        
+                            <!-- card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
 
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[10px]">
-    
-                                <div class="flex flex-col gap-y-[6px]">
-                                    <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
-                                    <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
-                                    <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
                                 </div>
         
-                                <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
-                                    <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
-                                </button>
-                            </div>
-    
-                        </div>
-    
-                        <!-- card -->
-                        <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
-
-                            <!-- Expand icon -->
-                            <a href="" class="absolute top-[6px] right-[7px]">
-                                <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
-                            </a>
-    
-                            <!-- Provider add card top -->
-                            <div class="rounded-[9px] overflow-hidden">
-                                <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
-                            </div>
-    
-                            <!-- Provider add card body -->
-                            <div class="mt-[10px]">
-    
-                                <div class="flex flex-col gap-y-[6px]">
-                                    <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
-                                    <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
-                                    <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                <!-- Provider add card body -->
+                                <div class="mt-[10px]">
+        
+                                    <div class="flex flex-col gap-y-[6px]">
+                                        <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
+                                        <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
+                                        <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                    </div>
+            
+                                    <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
+                                        <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
+                                    </button>
                                 </div>
         
-                                <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
-                                    <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
-                                    <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
-                                </button>
                             </div>
-    
+        
+                            <!-- card -->
+                            <div class="sm:col-span-2 gap-[26px] py-[8px] px-[9px] border-[1px] border-[#BCC2C0] rounded-[9px] bg-white relative overflow-hidden">
+
+                                <!-- Expand icon -->
+                                <a href="" class="absolute top-[6px] right-[7px]">
+                                    <img src="img/pv-expand.svg" alt="expand" class="w-[20px] h-[20px]" />
+                                </a>
+        
+                                <!-- Provider add card top -->
+                                <div class="rounded-[9px] overflow-hidden">
+                                    <img src="img/gift-placeholder.png" alt="sp-img" class="w-full rounded-[9px] max-h-[130px] object-cover" />
+                                </div>
+        
+                                <!-- Provider add card body -->
+                                <div class="mt-[10px]">
+        
+                                    <div class="flex flex-col gap-y-[6px]">
+                                        <span class="text-[10px] leading-[14px] text-[#6B6C6B]">Brand</span>
+                                        <h3 class="text-[#323735] leading-[14px] text-[12px] font-[600]">Gift Name, Characteristic + Size</h3>
+                                        <span class="block text-[#464A48] leading-[12px] text-[12px]">$200</span>
+                                    </div>
+            
+                                    <button class="py-[8px] px-[12px] border-[1px] border-[#323735] rounded-[5px] mt-[10px] bg-transparent flex items-center gap-[8px] w-full">
+                                        <img src="img/sp-add-circle.svg" alt="add" class="w-[15px] h-[15px]" />
+                                        <span class="text-[#323735] text-[12px] leading-[14px] font-[600]">Choose instead</span>
+                                    </button>
+                                </div>
+        
+                            </div>
                         </div>
+
                     </div>
 
-                </div>
-
-                <!-- Footer -->
-                <div class="flex items-center justify-between gap-[12px]">
-                    <div class="flex flex-col gap-y-[2px] flex-1">
-                        <h3 class="text-[#464A48] text-[14px] font-[600] leading-[21px]">Don’t want an alternative?</h3>
-                        <p class="text-[#464A48] text-[12px] font-[400] leading-[18px]">We can notify you when your original product is back in stock.</p>
+                    <!-- Footer -->
+                    <div class="flex items-center justify-between gap-[12px]">
+                        <div class="flex flex-col gap-y-[2px] flex-1">
+                            <h3 class="text-[#464A48] text-[14px] font-[600] leading-[21px]">Don’t want an alternative?</h3>
+                            <p class="text-[#464A48] text-[12px] font-[400] leading-[18px]">We can notify you when your original product is back in stock.</p>
+                        </div>
+        
+                        <button class="py-[10px] px-[13px] border-[1px] border-[#323735] rounded-[6px] bg-white">
+                            <span class="text-[#464A48] text-[12px] leading-[17px] font-[600]">E-mail when Available</span>
+                        </button>
                     </div>
-    
-                    <button class="py-[10px] px-[13px] border-[1px] border-[#323735] rounded-[6px] bg-white">
-                        <span class="text-[#464A48] text-[12px] leading-[17px] font-[600]">E-mail when Available</span>
-                    </button>
+
                 </div>
 
             </div>
 
         </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
