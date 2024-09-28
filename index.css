@@ -62,3 +62,33 @@ select {
           -webkit-appearance: none;
           -moz-appearance: none;
 }
+
+.dotted-long {
+  aspect-ratio: 1;             
+}
+
+.dotted-long-rounded-full:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  padding: 1px;
+  background: #3399FF;
+  mask: linear-gradient(#0000 0 0) content-box intersect,
+        repeating-conic-gradient(from calc(8deg/2),
+        #000 0 calc(360deg/24 - 8deg),
+        #0000 0 calc(360deg/24)
+  );
+}
+
+.dotted-long-rounded:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:10px;
+  padding: 2px;
+  background: #3399FF;
+  mask:
+   linear-gradient(#0000 0 0) content-box intersect,
+    repeating-conic-gradient(from calc(4deg/1),#000 0 calc(360deg/28 - 8deg),#0000 0 calc(360deg/28));
+}

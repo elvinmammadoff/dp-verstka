@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
+        
+        <div class="flex items-start gap-[50px] flex-wrap">
+
+            <!-- Sidebar -->
+            <div class="sm:w-[350px] rounded-[16px] bg-[#F9F3EF] py-[36px] px-[30px] flex flex-col gap-y-[36px]">
+
+                <!-- Profile -->
+                <div class="flex flex-col gap-y-[16px] items-center">
+
+                    <!-- Avatar -->
+                    <div class="w-[130px] h-[130px] rounded-full overflow-hidden">
+                        <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                    </div>
+
+                    <h3 class="text-[#323735] font-[600] text-2xl leading-[33px]">Eve’s Account</h3>
+                    <p class="text-[#323735] font-[400] text-base leading-[22px]">eve@gmail.com</p>
+                    <div class="flex items-center gap-[6px]">
+                        <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                        <p class="text-[#323735] text-base font-normal leading-[22px]">You Dopple Credit: <span class="text-[#6A976E] text-base font-[600] leading-[22px]">$50</span></p>
+                    </div>
+
+                </div>
+
+                <!-- Menu -->
+                <ul class="flex flex-col gap-y-[8px]">
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-account.svg" alt="sett-account" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Account Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-track.svg" alt="sett-track" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Registry Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-service.svg" alt="sett-service" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Invite Collaborator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px] bg-white">
+                            <img src="img/sett-shipping.svg" alt="sett-shipping" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Shipping Address</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Log out -->
+                <a href="" class="text-center gap-[10px] p-[10px] rounded-[8px] text-[#464A48] text-lg font-600 leading-[25px]">Log out</a>
+
+            </div>
+
+            <!-- Main Layout -->
+            <div class="flex flex-col flex-1 gap-y-[32px]">
+
+                <h3 class="font-[700] text-2xl leading-[33px] text-[#323735]">Shipping Address</h3>
+
+                <div class="flex flex-col gap-y-[8px] rounded-lg bg-[#F9F3EF] py-[16px] px-[24px]">
+
+                    <div class="flex items-center gap-[16px]">
+                        <img src="img/info-circle.svg" alt="info" class="w-[24px] h-[24px]" />
+                        <h3 class="text-base font-[600] leading-[22px] text-[#464A48]">Your address is always private</h3>
+                    </div>
+
+                    <p class="text-[14px] font-[300] leading-[21px] text-[#464A48]">We take your privacy seriously and do not share your address with anyone. We will ship the gifts to the address saved with us.</p>
+
+                </div>
+    
+                <!-- Form -->
+                <form action="" class="">
+                    <div class="grid grid-cols-1 gap-x-[24px] gap-y-[16px] sm:grid-cols-12">
+        
+                        <!-- Name -->
+                        <div class="sm:col-span-6">
+                            <label for="first-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Name *</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+        
+                        <!-- Last Name -->
+                        <div class="sm:col-span-6">
+                            <label for="last-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Last Name</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name"
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- Street Address -->
+                        <div class="sm:col-span-7">
+                            <label for="str-addr" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Street Address *</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="str-addr" id="str-addr" placeholder="Street A" required
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+        
+                        <!-- Apt, Suite -->
+                        <div class="sm:col-span-5">
+                            <label for="apt" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Apt, Suite, etc.</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="apt" id="apt" placeholder="192B"
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- City -->
+                        <div class="sm:col-span-4">
+                            <label for="city" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">City *</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="city" id="city" placeholder="City" required
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- State -->
+                        <div class="sm:col-span-4">
+                            <label for="state" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">State *</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="state" id="state" placeholder="State" required
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- ZIP/Post Code -->
+                        <div class="sm:col-span-4">
+                            <label for="zip-code" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">ZIP/Post Code</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="zip-code" id="zip-code" placeholder="000000"
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="sm:col-span-12 text-center">
+                            <button class="flex items-center justify-center mt-[16px] gap-x-[12px] bg-[#6B6C6B] text-white hover:bg-[#6B6C6B] hover:text-white py-[11px] px-[30px] rounded-lg w-full sm:w-[200px] mx-auto">
+                                <span class="leading-[25px] font-[600] text-[18px]">Save</span>
+                            </button>
+                        </div>
+        
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

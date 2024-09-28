@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto pt-[95px] pb-[130px] max-w-[1100px]">
+
+
+    <!--===== MODAL =====-->
+
+        <!-- Modal overlay -->
+        <div class="w-full h-full bg-[#2A2A2A] opacity-60 absolute top-0 left-0 z-10"></div>
+        
+        <!-- Modal card -->
+        <div class="shadow-lg bg-white z-10 rounded-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[774px] overflow-hidden p-[60px]">
+            
+            <!-- Close icon -->
+            <button class="absolute top-[25px] right-[27px]">
+                <img src="img/exit.svg" alt="close" class="w-[18px] h-[18px]" />
+            </button>
+
+            <!-- Modal title -->
+            <h3 class="font-[700] text-[#323735] text-[18px] leading-[25px]">Registry Visibilty</h3>
+
+            <!-- Modal content -->
+            <form action="" class="mt-[40px]">
+
+                <div class="flex flex-col gap-y-[40px]">
+
+                    <div class="grid grid-cols-1 gap-[28px] sm:grid-cols-6">
+        
+                        <div class="sm:col-span-3">
+                            <div class="bg-white p-[20px] border-[3px] border-[#6A976E] rounded-[12px]">
+        
+                                <!-- Check -->
+                                <input id="comments" name="comments" checked type="checkbox" class="accent-[#6A976E] h-[40px] w-[40px] rounded-[5px] border-[#D8C3B4] text-white focus:outline-none">
+        
+                                <div class="flex items-center gap-[10px] mt-[29px]">
+                                    <img src="img/sett-close-lock.svg" alt="close-lock" class="w-[32px] h-[32px]" />
+                                    <h3 class="text-[#323735] text-[24px] leading-[34px] font-[700]">Private</h3>
+                                </div>
+                                <p class="text-[#464A48] text-base leading-[22px] font-[300] mt-[10px]">I want my registry to be private. Only friends & family with a password will be able access it.</p>
+                            </div>
+                        </div>
+    
+                        <div class="sm:col-span-3">
+                            <div class="bg-white p-[20px] border-[1px] border-[#D8C3B4] rounded-[12px]">
+        
+                                <!-- Check -->
+                                <input id="comments" name="comments" type="checkbox" class="accent-[#6A976E] h-[40px] w-[40px] rounded-[5px] border-[#D8C3B4] text-white focus:outline-none">
+        
+                                <div class="flex items-center gap-[10px] mt-[29px]">
+                                    <img src="img/sett-open-lock.svg" alt="close-lock" class="w-[32px] h-[32px]" />
+                                    <h3 class="text-[#323735] text-[24px] leading-[34px] font-[700]">Public</h3>
+                                </div>
+                                <p class="text-[#464A48] text-base leading-[22px] font-[300] mt-[10px]">I want my registry to be open. Friends & family can see it without the password.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Password -->
+                    <div>
+                        <label for="reg-pass" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Set a Registry Password *</label>
+                        <div class="mt-[10px] relative">
+                            <input type="text" name="reg-pass" id="reg-pass" placeholder="Password123" required
+                                class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            <button type="button" class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
+                                <img src="img/pass-eye.svg" alt="eye" class="w-[24px] h-[24px]" />
+                            </button>
+                        </div>
+                        <p class="text-[#464A48] text-[14.4px] leading-[20px] font-[300] mt-[12px]"><span class="italic">Note:</span> Don’t forget to share the password with friends & family when sharing your registry.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-[16px]">
+                        <button class="flex items-center justify-center bg-transparent text-[#323735] hover:bg-transparent hover:text-[#323735] border-[1px] border-[#323735] py-[12px] px-[30px] rounded-lg w-full sm:w-[200px]">
+                            <span class="leading-[22px] font-[600] text-base">Cancel</span>
+                        </button>
+        
+                        <button class="flex items-center justify-center gap-x-[12px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[12px] px-[30px] rounded-lg w-full sm:w-[200px]">
+                            <span class="leading-[22px] font-[600] text-base">Save</span>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="flex items-start gap-[50px] flex-wrap">
+
+            <!-- Sidebar -->
+            <div class="sm:w-[350px] rounded-[16px] bg-[#F9F3EF] py-[36px] px-[30px] flex flex-col gap-y-[36px]">
+
+                <!-- Profile -->
+                <div class="flex flex-col gap-y-[16px] items-center">
+
+                    <!-- Avatar -->
+                    <div class="w-[130px] h-[130px] rounded-full overflow-hidden">
+                        <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                    </div>
+
+                    <h3 class="text-[#323735] font-[600] text-2xl leading-[33px]">Eve’s Account</h3>
+                    <p class="text-[#323735] font-[400] text-base leading-[22px]">eve@gmail.com</p>
+                    <div class="flex items-center gap-[6px]">
+                        <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                        <p class="text-[#323735] text-base font-normal leading-[22px]">You Dopple Credit: <span class="text-[#6A976E] text-base font-[600] leading-[22px]">$50</span></p>
+                    </div>
+
+                </div>
+
+                <!-- Menu -->
+                <ul class="flex flex-col gap-y-[8px]">
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-account.svg" alt="sett-account" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Account Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px] bg-white">
+                            <img src="img/sett-track.svg" alt="sett-track" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Registry Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-service.svg" alt="sett-service" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Account Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-shipping.svg" alt="sett-shipping" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Account Details</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Log out -->
+                <a href="" class="text-center gap-[10px] p-[10px] rounded-[8px] text-[#464A48] text-lg font-600 leading-[25px]">Log out</a>
+
+            </div>
+
+            <!-- Main Layout -->
+            <div class="flex flex-col flex-1 gap-y-[32px]">
+
+                <h3 class="font-[700] text-2xl leading-[33px] text-[#323735]">Registry Settings</h3>
+    
+                <!-- Form -->
+                <form action="" class="">
+                    
+                    <!-- Registry Name -->
+                    <div>
+                        <label for="regs-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Registry Name *</label>
+                        <div class="mt-[10px]">
+                            <input type="text" name="regs-name" id="regs-name" placeholder="Eve’s Cute Baby" required
+                                class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                        </div>
+                    </div>
+    
+                    <!-- Divider -->
+                    <div class="h-[1px] w-full bg-[#BCC2C0] mt-[32px] mb-[32px]"></div>
+
+                    <!-- Share Link -->
+                    <div>
+                        <label for="share-link" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Copy the link to share with friends & family: </label>
+                        <div class="mt-[10px] relative">
+                            <input type="text" name="share-link" id="share-link" placeholder="https://registry.thedopple.com/registries/cutebaby"
+                                class="block w-full rounded-[6px] border border-[#D8C3B4] py-[16px] pl-[20px] pr-[40px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            <button type="button" class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
+                                <img src="img/sett-copy.svg" alt="copy" class="w-[16px] h-[16px]" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-[16px] flex flex-col gap-y-[4px]">
+                        <div class="flex items-center gap-[10px]">
+                            <h3 class="text-[#464A48] font-[600] text-[14px] leading-[21px]">Your registry is currently set to <a href="" class="text-[#464A48] font-[600] text-[14px] leading-[21px] underline underline-offset-4">Private</a></h3>
+                            <img src="img/fg-pencil.svg" alt="pencil" class="w-[24px] h-[24px]" />
+                        </div>
+                        <p class="text-[#464A48] font-[400] text-[12px] leading-[18px]">Don’t forget to share your Password: Password 123</p>
+                    </div>
+
+                    <div class="flex items-center gap-[10px] mt-[12px]">
+                        <h3 class="text-[#464A48] font-[600] text-[14px] leading-[21px]">Don’t Like your URL?</h3>
+                        <span class="text-[#464A48] font-[400] text-[12px] leading-[18px]">Customize your link</span>
+                        <img src="img/fg-pencil.svg" alt="pencil" class="w-[24px] h-[24px]" />
+                    </div>
+
+                    <div class="flex items-center justify-center gap-x-[32px] mt-[32px]">
+                        <button class="flex items-center justify-center bg-transparent text-[#323735] hover:bg-transparent hover:text-[#323735] border-[1px] border-[#323735] py-[12px] px-[30px] rounded-lg w-full sm:w-[200px]">
+                            <span class="leading-[22px] font-[600] text-base">See Preview</span>
+                        </button>
+        
+                        <button class="flex items-center justify-center gap-x-[12px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[12px] px-[30px] rounded-lg w-full sm:w-[200px]">
+                            <img src="img/copy-white.svg" alt="add-circle" class="w-[24px] h-[24px]" />
+                            <span class="leading-[22px] font-[600] text-base">Copy Link</span>
+                        </button>
+                    </div>
+
+                    <!-- Success message -->
+                    <div class="bg-[#F9F3EF] rounded-[10px] flex items-center gap-[16px] py-[16px] px-[20px] mt-[32px]">
+                        <img src="img/sp-check.svg" alt="check" class="w-[32px] h-[32px]" />
+                        <span class="text-[#323735] text-[16px] leading-[22px] font-[600]">The Link was successfully copied to your Dashboard</span>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mx-auto flex flex-col gap-y-[30px] pt-[95px] pb-[130px] max-w-[1100px]">
+        
+        <div class="flex items-start gap-[50px] flex-wrap">
+
+            <!-- Sidebar -->
+            <div class="sm:w-[350px] rounded-[16px] bg-[#F9F3EF] py-[36px] px-[30px] flex flex-col gap-y-[36px]">
+
+                <!-- Profile -->
+                <div class="flex flex-col gap-y-[16px] items-center">
+
+                    <!-- Avatar -->
+                    <div class="w-[130px] h-[130px] rounded-full overflow-hidden">
+                        <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                    </div>
+
+                    <h3 class="text-[#323735] font-[600] text-2xl leading-[33px]">Eve’s Account</h3>
+                    <p class="text-[#323735] font-[400] text-base leading-[22px]">eve@gmail.com</p>
+                    <div class="flex items-center gap-[6px]">
+                        <img src="img/pwc-credit.svg" alt="credit" class="w-[24px] h-[24px]" />
+                        <p class="text-[#323735] text-base font-normal leading-[22px]">You Dopple Credit: <span class="text-[#6A976E] text-base font-[600] leading-[22px]">$50</span></p>
+                    </div>
+
+                </div>
+
+                <!-- Menu -->
+                <ul class="flex flex-col gap-y-[8px]">
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-account.svg" alt="sett-account" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Account Details</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-track.svg" alt="sett-track" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Registry Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px] bg-white">
+                            <img src="img/sett-service.svg" alt="sett-service" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Invite Collaborator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="flex items-center gap-[10px] p-[10px] rounded-[8px]">
+                            <img src="img/sett-shipping.svg" alt="sett-shipping" class="w-[32px] h-[32px]" />
+                            <span class="text-[#464A48] text-lg font-600 leading-[25px]">Shipping Address</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Log out -->
+                <a href="" class="text-center gap-[10px] p-[10px] rounded-[8px] text-[#464A48] text-lg font-600 leading-[25px]">Log out</a>
+
+            </div>
+
+            <!-- Main Layout -->
+            <div class="flex flex-col flex-1 gap-y-[32px]">
+
+                <h3 class="font-[700] text-2xl leading-[33px] text-[#323735]">Registry Collaborators</h3>
+                <p class="">You can share this link with your friends & family to build this registry with you. They will be able to add new products to your registry. They won’t be able to edit or delete the products you have added yourself.</p>
+                <p class=""><span class="">Note:</span> that this link is <span>not the same</span> as the one you use to share your registry.</p>
+    
+                <!-- Divider -->
+                <div class="h-[1px] w-full bg-[#BCC2C0]"></div>
+    
+                <h3 class="font-[600] text-lg leading-[25px] text-[#464A48]">Invite a new collaborator</h3>
+    
+                <!-- Form -->
+                <form action="" class="">
+                    <div class="grid grid-cols-1 gap-x-[24px] gap-y-[16px] sm:grid-cols-6">
+        
+                        <!-- Name -->
+                        <div class="sm:col-span-3">
+                            <label for="first-name" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">Name *</label>
+                            <div class="mt-[10px]">
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" required
+                                    class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+                
+                        <!-- Email -->
+                        <div class="sm:col-span-3">
+                            <label for="email" class="block text-[14px] font-[600] leading-[21px] text-[#323735]">E-mail (optional)</label>
+                            <div class="mt-[10px]">
+                                <input id="email" name="email" type="email" placeholder="Their E-mail" class="block w-full rounded-[6px] border border-[#D8C3B4] py-[14px] px-[20px] text-[#323735] text-sm shadow-sm focus:outline-none placeholder:text-[#6B6C6B] leading-[21px]">
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="sm:col-span-6 text-center">
+                            <button class="flex items-center justify-center gap-x-[12px] bg-[#6A976E] text-white hover:bg-[#6A976E] hover:text-white py-[11px] px-[30px] rounded-lg max-w mx-auto">
+                                <span class="leading-[25px] font-[600] text-[18px]">Generate Invite Link</span>
+                            </button>
+                        </div>
+        
+                    </div>
+                </form>
+    
+                <!-- Divider -->
+                <div class="h-[1px] w-full bg-[#BCC2C0]"></div>
+    
+                <div class="flex items-center gap-[14px] flex-wrap">
+
+                    <div class="flex flex-col gap-y-[8px] flex-1">
+                        <h3 class="font-[600] text-lg leading-[25px] text-[#464A48]">See your Collaborators</h3>
+                        <p class="font-[400] text-sm leading-[21px] text-[#464A48]">Here you can see and edit who joined your registry.</p>
+                    </div>
+
+                    <button class="flex items-center justify-center gap-[11px] rounded-[6px] border-[1px] border-[#464A48] py-[11px] px-[14px] sm:w-[120px] w-full">
+                        <img src="img/fg-pencil.svg" alt="pencil" class="w-[24px] h-[24px]" />
+                        <span class="font-[700] text-[14px] leading-[17px] text-[#464A48]">Edit</span>
+                    </button>
+
+                </div>
+    
+                <!-- Collaborators list -->
+                <form action="" class="">
+                    <div class="grid grid-cols-1 gap-[16px] sm:grid-cols-6">
+        
+                        <div class="sm:col-span-2">
+                            <div class="bg-white flex flex-col items-center gap-y-[12px] py-[16px] px-[20px] border-[1px] border-[#D8C3B4] rounded-[10px]">
+                                
+                                <!-- Avatar -->
+                                <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                                </div>
+
+                                <div class="flex flex-col items-center gap-y-[2px]">
+                                    <h3 class="font-[700] text-lg leading-[23px] text-[#323735]">Sara</h3>
+                                    <span class="font-[400] text-sm leading-[21px] text-[#6B6C6B]">sara@gmail.com</span>
+                                </div>
+
+                                <div class="bg-[#FFE5B2] flex items-center justify-center gap-[8px] py-[6px] px-[12px] rounded h-[36px]">
+                                    <span class="font-[500] text-[14px] leading-[18px] text-[#323735]">Awaiting Confirmation</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <div class="bg-white flex flex-col items-center gap-y-[12px] py-[16px] px-[20px] border-[1px] border-[#D8C3B4] rounded-[10px]">
+                                
+                                <!-- Avatar -->
+                                <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                                </div>
+
+                                <div class="flex flex-col items-center gap-y-[2px]">
+                                    <h3 class="font-[700] text-lg leading-[23px] text-[#323735]">Sara</h3>
+                                    <span class="font-[400] text-sm leading-[21px] text-[#6B6C6B]">sara@gmail.com</span>
+                                </div>
+
+                                <div class="bg-[#EBF4EB] flex items-center justify-center gap-[8px] py-[6px] px-[12px] rounded w-full h-[36px]">
+                                    <img src="img/pv-check.svg" alt="check" class="w-[24px] h-[24px]" />
+                                    <span class="font-[500] text-[14px] leading-[18px] text-[#6A976E]">Collaborator</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <div class="bg-white flex flex-col items-center gap-y-[12px] py-[16px] px-[20px] border-[1px] border-[#D8C3B4] rounded-[10px]">
+                                
+                                <!-- Avatar -->
+                                <div class="w-[80px] h-[80px] rounded-full overflow-hidden">
+                                    <img src="img/sp-avatar.png" alt="avatar" class="w-full h-full rounded-full" />
+                                </div>
+
+                                <div class="flex flex-col items-center gap-y-[2px]">
+                                    <h3 class="font-[700] text-lg leading-[23px] text-[#323735]">Sara</h3>
+                                    <span class="font-[400] text-sm leading-[21px] text-[#6B6C6B]">sara@gmail.com</span>
+                                </div>
+
+                                <div class="bg-[#FFE5B2] flex items-center justify-center gap-[8px] py-[6px] px-[12px] rounded h-[36px]">
+                                    <span class="font-[500] text-[14px] leading-[18px] text-[#323735]">Awaiting Confirmation</span>
+                                </div>
+
+                            </div>
+                        </div>
+        
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
